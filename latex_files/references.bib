@@ -1,0 +1,2980 @@
+%
+% PLEASE NOTE THAT THIS FILE IS ORDERED
+% Cannon:2011tb
+% At least the initial part of the file is ordered.
+% The order in the file is alphabetical.
+% 
+% However, starting at the middle there is a large
+% number of entries that are not ordered.
+%
+
+%==============================================
+% USEFUL ABBREVATIONS
+%==============================================
+
+@string{apj="Astrophys J."}
+@string{apjl="Astrophys. J. Lett."}
+@string{prl="Phys. Rev. Lett."}
+@string{prd="Phys. Rev. D"}
+@string{ptp="Prog. Theor. Phys."}
+@string{cqg="Class. Quantum Grav."}
+@string{ijmpd="Int. J. Mod. Phys. D"}
+@string{mnras="Mon. Not. R. Astron. Soc."}
+@STRING(LRR="Living Rev. Relativ.")
+@STRING(PhysRep="Phys. Rep.")
+@STRING(PhysLett="Phys. Lett.")
+@STRING(PRA="Phys. Rev. A")
+@STRING(PRB="Phys. Rev. B")
+@STRING(PRC="Phys. Rev. C")
+@STRING(PRD="Phys. Rev. D")
+@STRING(PRE="Phys. Rev. E")
+@STRING(PRL="Phys. Rev. Lett.")
+@STRING(RMP="Rev. Mod. Phys.")
+@STRING(CQG="Class. Quantum Grav.")
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THESE ARE REDUCED BASIS REFERENCES,WHICH DUE 
+% TO LACK OF TIME ARE NOT LISTED ALPHABETICALLY, 
+% THIS NEEDS TO BE DONE LATER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%% ams notices %%%%%%%%%%%%%%%
+@article{Setyawati_2020,
+	doi = {10.1088/1361-6382/ab693b},
+	year = 2020,
+	month = {mar},
+	publisher = {{IOP} Publishing},
+	volume = {37},
+		pages = {075012},
+	author = {Yoshinta Setyawati and Michael P\"urrer and Frank Ohme},
+	title = {Regression methods in waveform modeling: a comparative study},
+	journal = {Class. Quantum Grav.},
+	}
+
+@book{funaro1992polynomial,
+  title={Polynomial Approximation of Differential Equations},
+  author={Funaro, D.},
+  number={v. 8},
+  isbn={9783540552307},
+  lccn={lc92008159},
+  series={Lecture notes in physics: Monographs},
+  year={1992},
+  publisher={Springer},
+  doi={10.1007/978-3-540-46783-0}
+}
+
+@book{Weidmann1987,
+author = {Weidmann, J.},
+title = {Spectral Theory of Ordinary Differential Operators},
+year = {1987},
+isbn = {038717902X},
+publisher = {Springer},
+address = {Berlin, Heidelberg}
+}
+
+@misc{eureqa,
+title = "{Eureqa Software}. https://www.datarobot.com/nutonian/",
+}
+
+@misc{gwtools,
+  title     = "{GWTools}. https://pypi.org/project/gwtools/",
+}
+
+%@misc{,
+%  key       = {Arby},
+%  title     = {Arby: A Python Package for reduced order modeling},
+%  url       = {https://github.com/aaronuv/arby}
+%}
+
+@misc{arby,
+  url = {https://arxiv.org/abs/2108.01305},
+  author = {Villanueva, Aarón and Beroiz, Martin and Cabral, Juan and Chalela, Martin and Dominguez, Mariano},
+  title = {Arby - Fast data-driven surrogates},
+  publisher = {arXiv},
+  year = {2021},
+}
+% doi = {10.48550/ARXIV.2108.01305},  
+%  copyright = {arXiv.org perpetual, non-exclusive license}
+%  keywords = {Computation (stat.CO), Instrumentation and Methods for Astrophysics (astro-ph.IM), Data Analysis, Statistics and Probability (physics.data-an), FOS: Computer and information sciences, FOS: Computer and information sciences, FOS: Physical sciences, FOS: Physical sciences}, 
+
+@book{hastie2009elements,
+  title={The Elements of Statistical Learning: Data Mining, Inference, and Prediction},
+  author={Hastie, T. and Tibshirani, R. and Friedman, J.H.},
+  isbn={9780387848846},
+  lccn={2008941148},
+  series={Springer series in statistics},
+  url={https://books.google.com.ar/books?id=eBSgoAEACAAJ},
+  year={2009},
+  publisher={Springer}
+}
+
+@misc{RIT,
+  author    = {James Healy and Carlos Lousto and Manuela Campanelli and Yosef Zlochower},
+  note      = {Accessed 31 May 2021},
+  publisher = {CCRG},
+  title     = {{RIT Waveform Catalog}},
+  url       = {https://ccrg.rit.edu/content/data/rit-waveform-catalog},
+  year      = {2017--2020}
+}
+
+@article{Brown_2016,
+	doi = {10.1088/2040-8978/18/2/025604},
+	year = 2016,
+	month = {jan},
+	publisher = {{IOP} Publishing},
+	volume = {18},
+	pages = {025604},
+	author = {D. Brown and R. J. E. Smith and A. Freise},
+	title = {Fast simulation of Gaussian-mode scattering for precision interferometry},
+	journal = {J. Opt.}
+}
+
+@article{Zackay:2019kkv,
+       author = {{Zackay}, Barak and {Venumadhav}, Tejaswi and {Roulet}, Javier and {Dai}, Liang and {Zaldarriaga}, Matias},
+        title = "{Detecting Gravitational Waves in Data with Non-Gaussian Noise}",
+      journal = {arXiv e-prints},
+         year = 2019,
+        month = aug,
+archivePrefix = {arXiv},
+       eprint = {1908.05644},
+ primaryClass = {astro-ph.IM},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190805644Z},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{PhysRevD.100.024021,
+  title = {Second RIT binary black hole simulations catalog and its application to gravitational waves parameter estimation},
+  author = {Healy, James and Lousto, Carlos O. and Lange, Jacob and O'Shaughnessy, Richard and Zlochower, Yosef and Campanelli, Manuela},
+  journal = {Phys. Rev. D},
+  volume = {100},
+  pages = {024021},
+  numpages = {22},
+  year = {2019},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.100.024021}
+}
+
+@Article{Berti:2005ys,
+     author    = "Berti, Emanuele and Cardoso, Vitor and Will, Clifford M.",
+     title     = "{On gravitational-wave spectroscopy of massive black holes
+                  with the  space interferometer LISA}",
+     journal   = "Phys. Rev.",
+     volume    = "D73",
+     year      = "2006",
+     pages     = "064030",
+     doi       = "10.1103/PhysRevD.73.064030"
+}
+
+
+@article{Dreyer:2003bv,
+      author         = "Dreyer, Olaf and Kelly, Bernard J. and Krishnan, Badri
+                        and Finn, Lee Samuel and Garrison, David and others",
+      title          = "{Black hole spectroscopy: Testing general relativity
+                        through gravitational wave observations}",
+      journal        = "Class. Quantum Grav.",
+      volume         = "21",
+      pages          = "787-804",
+      doi            = "10.1088/0264-9381/21/4/003",
+      year           = "2004"
+}
+
+@article{Berti:2007zu,
+      author         = "Berti, Emanuele and Cardoso, Jaime and Cardoso, Vitor and
+                        Cavaglia, Marco",
+      title          = "{Matched-filtering and parameter estimation of ringdown
+                        waveforms}",
+      journal        = "Phys. Rev.",
+      volume         = "D76",
+      pages          = "104044",
+      doi            = "10.1103/PhysRevD.76.104044",
+      year           = "2007"
+}
+
+@book {Jan-RB,
+	title = {Certified Reduced Basis Methods for Parametrized Partial Differential Equations},
+	series = {Springer Briefs in Mathematics},
+	year = {2015},
+	pages = {135},
+	publisher = {Springer},
+	organization = {Springer},
+	edition = {1},
+	address = {Switzerland},
+			isbn = {978-3-319-22469-5},
+	issn = {2191-8201},
+	author = {Jan S Hesthaven and Gianluigi Rozza and Benjamin Stamm},
+        doi = {10.1007/978-3-319-22470-1}
+}
+  
+@book{quarteroni2015reduced,
+  title={Reduced Basis Methods for Partial Differential Equations: An Introduction},
+  author={Quarteroni, A. and Manzoni, A. and Negri, F.},
+  isbn={9783319154312},
+  lccn={2015930287},
+  series={UNITEXT},
+  year={2015},
+  publisher={Springer International Publishing},
+  doi={10.1007/978-3-319-15431-2}
+}
+
+@article{cohen2017,
+     author = {Albert Cohen and Giovanni Migliorati},
+     title = {Optimal weighted least-squares methods},
+     journal = {The SMAI journal of computational mathematics},
+     pages = {181--203},
+     publisher = {Soci\'et\'e de Math\'ematiques Appliqu\'ees et Industrielles},
+     volume = {3},
+     year = {2017},
+     doi = {10.5802/smai-jcm.24}
+}
+
+@article{stewart_gram_schmidt,
+    author = "Stewart, G.W.",
+    journal = "Technical Report from {UMIACS}",
+    title = "{The {G}ram-{S}chmidt Algorithm and Its Variations}",
+    year = "2006",
+    url = {http://hdl.handle.net/1903/3036}
+}
+
+
+@book{stewart1996afternotes,
+  title={Afternotes on Numerical Analysis},
+  author={Stewart, G.W.},
+  isbn={9780898713626},
+  lccn={95047768},
+  series={Other Titles in Applied Mathematics},
+  year={1996},
+  publisher={Society for Industrial and Applied Mathematics},
+  doi={10.2307/3618833}
+}
+
+@book{stewart1998afternotes,
+  title={Afternotes Goes to Graduate School: Lectures on Advanced Numerical Analysis},
+  author={Stewart, G.W.},
+  isbn={9780898714043},
+  lccn={97044449},
+  series={Other Titles in Applied Mathematics},
+  year={1998},
+  publisher={Society for Industrial and Applied Mathematics},
+  doi={10.1137/1.9781611971422 }
+}
+
+@article{Berti:2018cxi,
+    author = "Berti, Emanuele and Yagi, Kent and Yunes, Nicolás",
+    doi = "10.1007/s10714-018-2362-8",
+    journal = "Gen. Relativ. Gravit.",
+    pages = "46",
+    title = "{Extreme Gravity Tests with Gravitational Waves from Compact Binary Coalescences: (I) Inspiral-Merger}",
+    volume = "50",
+    year = "2018"
+}
+
+@article{Doctor:2017csx,
+    author = {Doctor, Zoheyr and Farr, Ben and Holz, Daniel E. and P\"urrer, Michael},
+    doi = "10.1103/PhysRevD.96.123011",
+    journal = "Phys. Rev. D",
+    pages = "123011",
+    primaryClass = "astro-ph.HE",
+    title = "{Statistical Gravitational Waveform Models: What to Simulate Next?}",
+    volume = "96",
+    year = "2017"
+}
+
+@article{Lasky:2016knh,
+    author = "Lasky, Paul D. and Thrane, Eric and Levin, Yuri and Blackman, Jonathan and Chen, Yanbei",
+    doi = "10.1103/PhysRevLett.117.061102",
+    journal = "Phys. Rev. Lett.",
+    pages = "061102",
+    title = "{Detecting gravitational-wave memory with LIGO: implications of GW150914}",
+    volume = "117",
+    year = "2016"
+}
+
+@article{Radice:2016rys,
+    author = "Radice, David and Bernuzzi, Sebastiano and Del Pozzo, Walter and Roberts, Luke F. and Ott, Christian D.",
+    doi = "10.3847/2041-8213/aa775f",
+    journal = "Astrophys. J. Lett.",
+    pages = "10",
+    title = "{Probing Extreme-Density Matter with Gravitational Wave Observations of Binary Neutron Star Merger Remnants}",
+    volume = "842",
+    year = "2017"
+}
+
+
+@article{Ashtekar:2019viz,
+    author = "Ashtekar, Abhay and De Lorenzo, Tommaso and Khera, Neev",
+    title = "{Compact binary coalescences: Constraints on waveforms}",
+    doi = "10.1007/s10714-020-02764-1",
+    journal = "Gen. Relativ. Gravit.",
+    volume = "52",
+    pages = "107",
+    year = "2020"
+}
+
+
+@article{Setyawati:2018tqp,
+    author = "Setyawati, Y. E. and Ohme, F. and Khan, S.",
+    doi = "10.1103/PhysRevD.99.024010",
+    journal = "Phys. Rev. D",
+    pages = "024010",
+    title = "{Enhancing gravitational waveform models through dynamic calibration}",
+    volume = "99",
+    year = "2019"
+}
+
+@article{Zhao:2019suc,
+    author = "Zhao, Junjie and Shao, Lijing and Cao, Zhoujian and Ma, Bo-Qiang",
+    doi = "10.1103/PhysRevD.100.064034",
+    journal = "Phys. Rev. D",
+    pages = "064034",
+    title = "{Reduced-order surrogate models for scalar-tensor gravity in the strong field regime and applications to binary pulsars and GW170817}",
+    volume = "100",
+    year = "2019"
+}
+
+@article{Setyawati:2019xzw,
+	doi = {10.1088/1361-6382/ab693b},
+	year = 2020,
+	month = {mar},
+	publisher = {{IOP} Publishing},
+	volume = {37},
+		pages = {075012},
+	author = {Yoshinta Setyawati and Michael P\"urrer and Frank Ohme},
+	title = {Regression methods in waveform modeling: a comparative study},
+	journal = {Class. Quantum Grav.},
+	}
+
+@ARTICLE{Antil2018,
+  author={H. {Antil} and D. {Chen} and S. {Field}},
+  journal={Comput. Sci. Eng.}, 
+  title={A Note on QR-Based Model Reduction: Algorithm, Software, and Gravitational Wave Applications}, 
+  year={2018},
+  volume={20},
+  number={4},
+  pages={10-25},
+  doi={10.1109/MCSE.2018.042781323}
+}
+
+
+@article{taylor_1978,
+title={The condition of gram matrices and related problems},
+volume={80},
+doi={10.1017/S030821050001012X},
+journal={Proc. R. Soc. Edinburgh: Sect. A Math.},
+publisher={Royal Society of Edinburgh Scotland Foundation},
+author={Taylor, J. M.},
+year={1978},
+pages={45–56}
+}
+
+
+@book{boyd2001chebyshev,
+  title={Chebyshev and Fourier Spectral Methods: Second Revised Edition},
+  author={Boyd, J.P.},
+  isbn={9780486411835},
+  lccn={lc00027475},
+  series={Dover Books on Mathematics},
+  year={2001},
+  publisher={Dover Publications}
+}
+
+@article{Gerosa:2018qay,
+    author = "Gerosa, Davide and Hébert, François and Stein, Leo C.",
+    doi = "10.1103/PhysRevD.97.104049",
+    journal = "Phys. Rev. D",
+    pages = "104049",
+    title = "{Black-hole kicks from numerical-relativity surrogate models}",
+    volume = "97",
+    year = "2018"
+}
+
+@article{Purrer:2014fza,
+    author = {P\"urrer, Michael},
+    doi = "10.1088/0264-9381/31/19/195010",
+    journal = "Class. Quant. Grav.",
+    pages = "195010",
+    title = "{Frequency domain reduced order models for gravitational waves from aligned-spin compact binaries}",
+    volume = "31",
+    year = "2014"
+}
+
+@article{Purrer:2015tud,
+    author = {P\"urrer, Michael},
+    doi = "10.1103/PhysRevD.93.064041",
+    journal = "Phys. Rev. D",
+    pages = "064041",
+    title = "{Frequency domain reduced order model of aligned-spin effective-one-body waveforms with generic mass-ratios and spins}",
+    volume = "93",
+    year = "2016"
+}
+
+@article{PhysRevD.100.024002,
+  title = {Surrogate model for an aligned-spin effective-one-body waveform model of binary neutron star inspirals using Gaussian process regression},
+  author = {Lackey, Benjamin D. and P\"urrer, Michael and Taracchini, Andrea and Marsat, Sylvain},
+  journal = {Phys. Rev. D},
+  volume = {100},
+  pages = {024002},
+  numpages = {20},
+  year = {2019},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.100.024002}
+}
+
+@article{Lackey:2016krb,
+    author = "Lackey, Benjamin D. and Bernuzzi, Sebastiano and Galley, Chad R. and Meidam, Jeroen and Van Den Broeck, Chris",
+    doi = "10.1103/PhysRevD.95.104036",
+    journal = "Phys. Rev. D",
+    pages = "104036",
+    title = "{Effective-one-body waveforms for binary neutron stars using surrogate models}",
+    volume = "95",
+    year = "2017"
+}
+
+
+@article{PhysRevD.86.024011,
+  title = {Prototype effective-one-body model for nonprecessing spinning inspiral-merger-ringdown waveforms},
+  author = {Taracchini, Andrea and Pan, Yi and Buonanno, Alessandra and Barausse, Enrico and Boyle, Michael and Chu, Tony and Lovelace, Geoffrey and Pfeiffer, Harald P. and Scheel, Mark A.},
+  journal = {Phys. Rev. D},
+  volume = {86},
+  pages = {024011},
+  numpages = {20},
+  year = {2012},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.86.024011}
+}
+
+
+@article{Haegel:2019uop,
+    author = "Haegel, Leïla and Husa, Sascha",
+    archivePrefix = "arXiv",
+    eprint = "1911.01496",
+    month = "11",
+    primaryClass = "gr-qc",
+    title = "{Predicting the properties of black holes merger remnants with Deep Neural Networks}",
+    year = "2019"
+}
+
+@article{Varma:2018aht,
+    author = "Varma, Vijay and Gerosa, Davide and Stein, Leo C. and Hébert, François and Zhang, Hao",
+    doi = "10.1103/PhysRevLett.122.011101",
+    journal = "Phys. Rev. Lett.",
+    pages = "011101",
+    title = "{High-accuracy mass, spin, and recoil predictions of generic black-hole merger remnants}",
+    volume = "122",
+    year = "2019"
+}
+
+@article{Hesthaven2018NonintrusiveRO,
+  title={Non-intrusive reduced order modeling of nonlinear problems using neural networks},
+  author={J. Hesthaven and S. Ubbiali},
+  journal={J. Comput. Phys.},
+  year={2018},
+  volume={363},
+  pages={55-78}
+}
+
+@article{PhysRevLett.122.211101,
+  title = {Reduced-Order Modeling with Artificial Neurons for Gravitational-Wave Inference},
+  author = {Chua, Alvin J. K. and Galley, Chad R. and Vallisneri, Michele},
+  journal = {Phys. Rev. Lett.},
+  volume = {122},
+  pages = {211101},
+  numpages = {7},
+  year = {2019},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.122.211101}
+}
+
+@article{Boyle_2019,
+	doi = {10.1088/1361-6382/ab34e2},
+	year = 2019,
+	month = {sep},
+	publisher = {{IOP} Publishing},
+	volume = {36},
+		pages = {195006},
+	author = {Michael Boyle and Daniel Hemberger and Dante A B Iozzo and Geoffrey Lovelace and Serguei Ossokine and Harald P Pfeiffer and Mark A Scheel and Leo C Stein and Charles J Woodford and Aaron B Zimmerman and Nousha Afshari and Kevin Barkett and Jonathan Blackman and Katerina Chatziioannou and Tony Chu and Nicholas Demos and Nils Deppe and Scott E Field and Nils L Fischer and Evan Foley and Heather Fong and Alyssa Garcia and Matthew Giesler and Francois Hebert and Ian Hinder and Reza Katebi and Haroon Khan and Lawrence E Kidder and Prayush Kumar and Kevin Kuper and Halston Lim and Maria Okounkova and Teresita Ramirez and Samuel Rodriguez and Hannes R Rüter and Patricia Schmidt and Bela Szilagyi and Saul A Teukolsky and Vijay Varma and Marissa Walker},
+	title = {The {SXS} collaboration catalog of binary black hole simulations},
+	journal = {Class. Quantum Grav.},
+}
+
+@article{rifat2019surrogate,
+  title = {Surrogate model for gravitational wave signals from comparable and large-mass-ratio black hole binaries},
+  author = {Rifat, Nur E. M. and Field, Scott E. and Khanna, Gaurav and Varma, Vijay},
+  journal = {Phys. Rev. D},
+  volume = {101},
+  pages = {081502},
+  numpages = {8},
+  year = {2020},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.101.081502}
+}
+
+
+@article{tiglio2021ab,
+author={Tiglio, Manuel and Villanueva, Aar\'on},
+title={On ab initio-based, free and closed-form expressions for gravitational waves},
+journal={Sci. Rep.},
+year={2021},
+month={Mar},
+day={12},
+volume={11},
+pages={5832},
+doi={10.1038/s41598-021-85102-y}
+}
+
+
+@article{Barta:2018tyg,
+    author = "Barta, D\'aniel and Vas\'uth, M\'aty\'as",
+    doi = "10.1103/PhysRevD.97.124011",
+    journal = "Phys. Rev. D",
+    pages = "124011",
+    title = "{Fast prediction and evaluation of eccentric inspirals using reduced-order models}",
+    volume = "97",
+    year = "2018"
+}
+
+@article{PhysRevD.93.044064,
+  title = {Gravitational waveforms for neutron star binaries from binary black hole simulations},
+  author = {Barkett, Kevin and Scheel, Mark A. and Haas, Roland and Ott, Christian D. and Bernuzzi, Sebastiano and Brown, Duncan A. and Szil\'agyi, B\'ela and Kaplan, Jeffrey D. and Lippuner, Jonas and Muhlberger, Curran D. and Foucart, Francois and Duez, Matthew D.},
+  journal = {Phys. Rev. D},
+  volume = {93},
+  pages = {044064},
+  numpages = {6},
+  year = {2016},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.93.044064},
+}
+
+
+@article{PhysRevD.98.084028,
+  title = {Enriching the symphony of gravitational waves from binary black holes by tuning higher harmonics},
+  author = {Cotesta, Roberto and Buonanno, Alessandra and Boh\'e, Alejandro and Taracchini, Andrea and Hinder, Ian and Ossokine, Serguei},
+  journal = {Phys. Rev. D},
+  volume = {98},
+  pages = {084028},
+  numpages = {30},
+  year = {2018},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.98.084028},
+}
+
+@book{Koza:1992:GPP:138936,
+ author = {Koza, John R.},
+ title = {Genetic programming: on the programming of computers by means of natural selection},
+ year = {1992},
+ isbn = {0-262-11170-5},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+} 
+
+@Inbook{Schmidt2010,
+author={Schmidt, Michael and Lipson, Hod},
+editor="Riolo, Rick and O'Reilly, Una-May and McConaghy, Trent",
+title="Symbolic regression of implicit equations",
+bookTitle="Genetic Programming Theory and Practice VII",
+year="2010",
+publisher="Springer US",
+address="Boston, MA",
+pages="73--85",
+abstract="Traditional Symbolic Regression applications are a form of supervised learning, where a label y is provided for every {\$}{\$}{\backslash}vec{\{}x{\}}{\$}{\$}and an explicit symbolic relationship of the form {\$}{\$}y = f({\backslash}vec{\{}x{\}}){\$}{\$}is sought. This chapter explores the use of symbolic regression to perform unsupervised learning by searching for implicit relationships of the form {\$}{\$}f({\backslash}vec{\{}x{\}}, y) = 0{\$}{\$}. Implicit relationships are more general and more expressive than explicit equations in that they can also represent closed surfaces, as well as continuous and discontinuous multi-dimensional manifolds. However, searching these types of equations is particularly challenging because an error metric is difficult to define. We studied several direct and indirect techniques, and present a successful method based on implicit derivatives. Our experiments identified implicit relationships found in a variety of datasets, such as equations of circles, elliptic curves, spheres, equations of motion, and energy manifolds.",
+isbn="978-1-4419-1626-6",
+doi="10.1007/978-1-4419-1626-6_5",
+}
+
+@article{Schmidt03042009,
+author = {Schmidt, Michael and Lipson, Hod}, 
+title = {Distilling Free-Form Natural Laws from Experimental Data},
+volume = {324}, 
+number = {5923}, 
+pages = {81-85}, 
+year = {2009}, 
+doi = {10.1126/science.1165893}, 
+abstract ={For centuries, scientists have attempted to identify and document analytical laws that underlie physical phenomena in nature. Despite the prevalence of computing power, the process of finding natural laws and their corresponding equations has resisted automation. A key challenge to finding analytic relations automatically is defining algorithmically what makes a correlation in observed data important and insightful. We propose a principle for the identification of nontriviality. We demonstrated this approach by automatically searching motion-tracking data captured from various physical systems, ranging from simple harmonic oscillators to chaotic double-pendula. Without any prior knowledge about physics, kinematics, or geometry, the algorithm discovered Hamiltonians, Lagrangians, and other laws of geometric and momentum conservation. The discovery rate accelerated as laws found for simpler systems were used to bootstrap explanations for more complex systems, gradually uncovering the “alphabet” used to describe those systems.}, 
+journal = {Science} 
+}
+
+@article{PhysRevD.89.061502,
+  title = {Effective-one-body model for black-hole binaries with generic mass ratios and spins},
+  author = {Taracchini, Andrea and Buonanno, Alessandra and Pan, Yi and Hinderer, Tanja and Boyle, Michael and Hemberger, Daniel A. and Kidder, Lawrence E. and Lovelace, Geoffrey and Mrou\'e, Abdul H. and Pfeiffer, Harald P. and Scheel, Mark A. and Szil\'agyi, B\'ela and Taylor, Nicholas W. and Zenginoglu, Anil},
+  journal = {Phys. Rev. D},
+  volume = {89},
+  pages = {061502},
+  numpages = {6},
+  year = {2014},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.89.061502},
+}
+
+
+@article{PhysRevD.99.064045,
+  title = {Surrogate model of hybridized numerical relativity binary black hole waveforms},
+  author = {Varma, Vijay and Field, Scott E. and Scheel, Mark A. and Blackman, Jonathan and Kidder, Lawrence E. and Pfeiffer, Harald P.},
+  journal = {Phys. Rev. D},
+  volume = {99},
+  pages = {064045},
+  numpages = {21},
+  year = {2019},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.99.064045}
+}
+
+
+@article{Csizmadia:2012wy,
+    author = "Csizmadia, Peter and Debreczeni, Gergely and Racz, Istvan and Vasuth, Matyas",
+    doi = "10.1088/0264-9381/29/24/245002",
+    journal = "Class. Quant. Grav.",
+    pages = "245002",
+    title = "{Gravitational waves from spinning eccentric binaries}",
+    volume = "29",
+    year = "2012"
+}
+
+@article{Varma:2019csw,
+    author = "Varma, Vijay and Field, Scott E. and Scheel, Mark A. and Blackman, Jonathan and Gerosa, Davide and Stein, Leo C. and Kidder, Lawrence E. and Pfeiffer, Harald P.",
+    doi = "10.1103/PhysRevResearch.1.033015",
+    journal = "Phys. Rev. Research.",
+    pages = "033015",
+    title = "{Surrogate models for precessing binary black hole simulations with unequal masses}",
+    volume = "1",
+    year = "2019"
+}
+
+@article{PhysRevLett.113.151101,
+  title = {Simple Model of Complete Precessing Black-Hole-Binary Gravitational Waveforms},
+  author = {Hannam, Mark and Schmidt, Patricia and Boh\'e, Alejandro and Haegel, Le\"{\i}la and Husa, Sascha and Ohme, Frank and Pratten, Geraint and P\"urrer, Michael},
+  journal = {Phys. Rev. Lett.},
+  volume = {113},
+  pages = {151101},
+  numpages = {5},
+  year = {2014},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.113.151101}
+}
+
+
+@article{PhysRevD.89.084006,
+  title = {Inspiral-merger-ringdown waveforms of spinning, precessing black-hole binaries in the effective-one-body formalism},
+  author = {Pan, Yi and Buonanno, Alessandra and Taracchini, Andrea and Kidder, Lawrence E. and Mrou\'e, Abdul H. and Pfeiffer, Harald P. and Scheel, Mark A. and Szil\'agyi, B\'ela},
+  journal = {Phys. Rev. D},
+  volume = {89},
+  pages = {084006},
+  numpages = {18},
+  year = {2014},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.89.084006}
+}
+
+
+@Article{Lousto:2009ka,
+     author    = "Lousto, Carlos O. and Nakano, Hiroyuki and Zlochower, Yosef
+                  and Campanelli, Manuela",
+     title     = "{Statistical studies of Spinning Black-Hole Binaries}",
+     journal   = "Phys. Rev.",
+     volume    = "D81",
+     year      = "2010",
+     pages     = "084023",
+     doi       = "10.1103/PhysRevD.81.084023",
+}
+
+@Article{Herrmann:2009mr,
+     author    = "Herrmann, Frank and Silberholz, John and Bellone, Matias
+                  and Guerberoff, Gustavo and Tiglio, Manuel",
+     title     = "{Integrating Post-Newtonian Equations on Graphics
+                  Processing Units}",
+     journal   = "Class. Quantum Grav.",
+     volume    = "27",
+     year      = "2010",
+     pages     = "032001",
+     doi       = "10.1088/0264-9381/27/3/032001",
+}
+
+
+@article{Wang2011OnTC,
+  title={On the convergence rates of Legendre approximation},
+  author={Haiyong Wang and Shuhuang Xiang},
+  journal={Math. Comput.},
+  year={2011},
+  volume={81},
+  pages={861-877},
+doi={10.1090/S0025-5718-2011-02549-4}
+}
+
+@book{hesthaven2007spectral,
+  title={Spectral Methods for Time-Dependent Problems},
+  author={Hesthaven, J.S. and Gottlieb, S. and Gottlieb, D.},
+  isbn={9781139459525},
+  series={Cambridge Monographs on Applied and Computational Mathematics},
+  year={2007},
+  publisher={Cambridge University Press},
+  doi={10.1017/CBO9780511618352.001}
+}
+
+@Article{Sarbach2012,
+author="Sarbach, Olivier
+and Tiglio, Manuel",
+title="Continuum and Discrete Initial-Boundary Value Problems and Einstein's Field Equations",
+journal="Living Rev. Relativ.",
+year="2012",
+month="Aug",
+day="27",
+volume="15",
+eid="9",
+issn="1433-8351",
+doi="10.12942/lrr-2012-9",
+}
+
+
+@misc{morepas,
+  note      = {Accessed 31 May 2021},
+  key       = {MoRePaS},
+  publisher = {},
+  title     = {{MoRePaS}: Model Reduction for Parametrized Systems},
+  url       = {https://www.morepas.org},
+  year      = {2010--2021}
+}
+  
+@misc{rom-gr,
+  note      = {Accessed 31 May 2021},
+  key       = {{ROM in GR}},
+  publisher = {CalTech},
+  title     = {{ROM in GR}: Reduced Order Modeling in General Relativity},
+  url       = {http://www.tapir.caltech.edu/~rom-gr},
+  year      = {2013}
+}
+
+
+@book{trefethen2000spectral,
+  title={Spectral Methods in MATLAB},
+  author={Trefethen, L.N.},
+  isbn={9780898719598},
+  lccn={00036559},
+  series={Software, Environments, and Tools},
+  year={2000},
+  publisher={SIAM},
+  doi={10.1137/1.9780898719598}
+}
+
+@book{trefethenLinearAlgebra,
+  title={Numerical Linear Algebra},
+  author={Trefethen, L.N. and Bau, D.},
+  isbn={0898713617},
+  year={1997},
+  publisher={SIAM}
+}
+
+@techreport{Moroz2013FastPE,
+  TITLE = {Fast polynomial evaluation and composition},
+  AUTHOR = {Moroz, Guillaume},
+  URL = {https://hal.archives-ouvertes.fr/hal-00846961},
+  YEAR = {2013},
+  MONTH = Apr,
+  HAL_ID = {hal-00846961},
+  HAL_VERSION = {v1},
+  institution = {Inria}
+}
+
+@inproceedings{Umans2007FastPF,
+author = {Umans, Christopher},
+title = {Fast Polynomial Factorization and Modular Composition in Small Characteristic},
+year = {2008},
+isbn = {9781605580470},
+publisher = {Association for Computing Machinery},
+address = {New York},
+doi = {10.1145/1374376.1374445},
+booktitle = {Proceedings of the Fortieth Annual ACM Symposium on Theory of Computing},
+pages = {481--490},
+numpages = {10},
+location = {Victoria, British Columbia, Canada},
+series = {STOC '08}
+}
+
+  
+
+
+
+@inproceedings{Brandt2018HighPS,
+  title={High Performance Sparse Multivariate Polynomials: Fundamental Data Structures and Algorithms},
+  author={A. F. Brandt},
+  year={2018}
+}
+
+@article{Kedlaya2008FastPF,
+  title={Fast Polynomial Factorization and Modular Composition},
+  author={Kiran S. Kedlaya and Christopher Umans},
+  journal={SIAM J. Comput.},
+  year={2008},
+  volume={40},
+  pages={1767-1802},
+  doi={10.1145/1374376.1374445}
+}
+
+@article{VANDERHOEVEN2020101405,
+title = "Fast multivariate multi-point evaluation revisited",
+journal = "J. Complexity",
+volume = "56",
+pages = "101405",
+year = "2020",
+issn = "0885-064X",
+doi = "10.1016/j.jco.2019.04.001",
+author = "Joris van der Hoeven and Grégoire Lecerf",
+}
+
+@article{Field:2011mf,
+      author         = "Field, Scott E. and Galley, Chad R. and Herrmann, Frank
+                        and Hesthaven, Jan S. and Ochsner, Evan and Tiglio, Manuel",
+      title          = "{Reduced basis catalogs for gravitational wave
+                        templates}",
+      journal        = "Phys. Rev. Lett.",
+      volume         = "106",
+      pages          = "221102",
+      doi            = "10.1103/PhysRevLett.106.221102",
+      year           = "2011"
+}
+
+@article{Caudill:2011kv,
+      author         = "Caudill, Sarah and Field, Scott E. and Galley, Chad R.
+                        and Herrmann, Frank and Tiglio, Manuel",
+      title          = "{Reduced Basis representations of multi-mode black hole
+                        ringdown gravitational waves}",
+      journal        = "Class. Quant. Grav.",
+      volume         = "29",
+      pages          = "095016",
+      year           = "2012",
+      url = {https://iopscience.iop.org/article/10.1088/0264-9381/29/9/095016}
+}
+
+@article{OBrien:2019hcj,
+       author = {{O'Brien}, Brendan D. and {Da Silva Costa}, Carlos F. and {Klimenko}, Sergey},
+        title = "{Measurement of sub-dominant harmonic modes for gravitational wave emission from a population of binary black holes}",
+      journal = {arXiv e-prints},
+         year = 2019,
+        month = jan,
+archivePrefix = {arXiv},
+       eprint = {1901.09072},
+ primaryClass = {gr-qc},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190109072O},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{PhysRevD.98.024052,
+  title = {Detection of (2,2) quasinormal mode from a population of black holes with a constructive summation method},
+  author = {Da Silva Costa, C. F. and Tiwari, S. and Klimenko, S. and Salemi, F.},
+  journal = {Phys. Rev. D},
+  volume = {98},
+  pages = {024052},
+  numpages = {8},
+  year = {2018},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.98.024052},
+}
+
+@article{BOYD2011443,
+title = "Numerical experiments on the condition number of the interpolation matrices for radial basis functions",
+journal = "Applied Numerical Mathematics",
+volume = "61",
+pages = "443--459",
+year = "2011",
+issn = "0168-9274",
+author = "John P. Boyd and Kenneth W. Gildersleeve",
+}
+
+@article{PhysRevD.88.122002,
+  title = {Improved coincident and coherent detection statistics for searches for gravitational wave ringdown signals},
+  author = {Talukder, Dipongkar and Bose, Sukanta and Caudill, Sarah and Baker, Paul T.},
+  journal = {Phys. Rev. D},
+  volume = {88},
+  pages = {122002},
+  numpages = {13},
+  year = {2013},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.88.122002},
+}
+
+@article{Owen:1995tm,
+      author         = "Owen, Benjamin J.",
+      title          = "{Search templates for gravitational waves from
+                        inspiraling binaries: Choice of template spacing}",
+      journal        = "Phys. Rev.",
+      volume         = "D53",
+      pages          = "6749-6761",
+      doi            = "10.1103/PhysRevD.53.6749",
+      year           = "1996"
+}
+
+@article{Manca:2009xw,
+      author         = "Manca, Gian Mario and Vallisneri, Michele",
+      title          = "{Cover art: Issues in the metric-guided and metric-less
+                        placement of random and stochastic template banks}",
+      journal        = "Phys. Rev.",
+      volume         = "D81",
+      pages          = "024004",
+      doi            = "10.1103/PhysRevD.81.024004",
+      year           = "2010"
+}
+
+@book{Stoer-Bulirsch-1980,
+        author = "J. Stoer and R. Bulirsch",
+        title  = "Introduction to Numerical Analysis",
+        publisher = "Springer",
+        address = "Berlin and New York",
+        year = 1980,
+        isbn = "3-540-90420-4 (Berlin) and 0-387-90420-4 (New York)",
+}
+
+@ARTICLE{Lodha97aunified,
+    author = {Suresh K. Lodha and Ron Goldman},
+    title = {A unified approach to evaluation algorithms for multivariate polynomials},
+    journal = {Math. Comp},
+    year = {1997},
+    pages = {1521--1553}
+}
+
+@article{Mandel:2014tca,
+title = "Parameter estimation on compact binary coalescences with abruptly terminating gravitational waveforms",
+author = "Ilya Mandel and Berry, {Christopher Philip Luke} and Frank Ohme and Stephen Fairhurst and Farr, {Will M.}",
+year = "2014",
+month = aug,
+day = "7",
+doi = "10.1088/0264-9381/31/15/155005",
+language = "English (US)",
+volume = "31",
+journal = "Class. Quantum Grav.",
+issn = "0264-9381",
+publisher = "IOP Publishing Ltd.",
+
+}
+
+@article{NarayanX12,
+  author = {Narayan, Akil and Xiu, Dongbin},
+  doi = {10.1137/110854059},
+  journal = {SIAM J. Sci. Comput.},
+  title = {Stochastic Collocation Methods on Unstructured Grids in High Dimensions via Interpolation},
+  volume = 34,
+  year = 2012
+}
+
+@book{10.2307/j.ctv7h0skv,
+ ISBN = {9780691142128},
+ author = {Dongbin Xiu},
+ publisher = {Princeton University Press},
+ title = {Numerical Methods for Stochastic Computations: A Spectral Method Approach},
+ year = {2010}
+}
+
+@article{Messenger:2008ta,
+      author         = "Messenger, C. and Prix, R. and Papa, M.A.",
+      title          = "{Random template banks and relaxed lattice coverings}",
+      journal        = "Phys. Rev.",
+      volume         = "D79",
+      pages          = "104017",
+      doi            = "10.1103/PhysRevD.79.104017",
+      year           = "2009"
+}
+
+@article{London:2018gaq,
+    author = "London, L. T.",
+    title = "{Modeling ringdown. II. Aligned-spin binary black holes, implications for data analysis and fundamental theory}",
+    doi = "10.1103/PhysRevD.102.084052",
+    journal = "Phys. Rev. D",
+    volume = "102",
+    pages = "084052",
+    year = "2020"
+}
+
+@article{London2014,
+   title={Modeling ringdown: Beyond the fundamental quasinormal modes},
+   volume={90},
+   ISSN={1550-2368},
+   DOI={10.1103/physrevd.90.124032},
+   number={12},
+   journal={Physical Review D},
+   publisher={American Physical Society (APS)},
+   author={London, Lionel and Shoemaker, Deirdre and Healy, James},
+   year={2014},
+   month={Dec}
+}
+
+@article{London:2018nxs,
+    author = "London, L. and Fauchon-Jones, E.",
+    doi = "10.1088/1361-6382/ab2f11",
+    journal = "Class. Quant. Grav.",
+    pages = "235015",
+    title = "{On modeling for Kerr black holes: Basis learning, QNM frequencies, and spherical-spheroidal mixing coefficients}",
+    volume = "36",
+    year = "2019"
+}
+
+@article{PhysRevLett.123.111102,
+  title = {Testing the No-Hair Theorem with GW150914},
+  author = {Isi, Maximiliano and Giesler, Matthew and Farr, Will M. and Scheel, Mark A. and Teukolsky, Saul A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {123},
+  pages = {111102},
+  numpages = {6},
+  year = {2019},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.123.111102}
+}
+
+
+@article{MAGARILILYAEV200197,
+title = "On Exact Values of n-Widths in a Hilbert Space",
+journal = "J. Approxim. Theory",
+volume = "108",
+pages = "97--117",
+year = "2001",
+issn = "0021-9045",
+doi = "10.1006/jath.2000.3497",
+author = "Georgii G Magaril-Il'yaev and Konstantin Yu Osipenko and Vladimir M Tikhomirov",
+}
+
+@book{Pinkus,
+        author      = {Allan Pinkus},
+        title       = {N-widths in approximation theory},
+        publisher   = {Springer},
+        address     = {Amsterdam},
+        year        = {1985},
+        doi         = {10.1007/978-3-642-69894-1}
+}
+
+@article{Ballico2011,
+title = "On the evaluation of multivariate polynomials over finite fields",
+journal = "J. Symbol. Comput.",
+volume = "50",
+pages = "255--262",
+year = "2013",
+issn = "0747-7171",
+doi = "10.1016/j.jsc.2012.07.005",
+author = "E. Ballico and M. Elia and M. Sala",
+}
+
+@InProceedings{10.1007/978-3-642-15582-6_55,
+author="Leiserson, Charles E.
+and Li, Liyun
+and Maza, Marc Moreno
+and Xie, Yuzhen",
+editor="Fukuda, Komei
+and Hoeven, Joris van der
+and Joswig, Michael
+and Takayama, Nobuki",
+title="Efficient Evaluation of Large Polynomials",
+booktitle="Mathematical Software -- ICMS 2010",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="342--353",
+isbn="978-3-642-15582-6",
+doi={10.1007/978-3-642-15582-6_55}
+}
+
+
+
+@article{Sauer1998,
+author = {Pe\~na, J. and Sauer, Tomas},
+year = {1998},
+month = {06},
+pages = {},
+title = {On the multivariate Horner scheme},
+volume = {37},
+journal = {SIAM J. Numer. Anal.},
+doi={10.1137/S0036142997324150}
+}
+
+@article{Ceberio2003,
+author = {Ceberio, Martine and Kreinovich, Vladik},
+year = {2003},
+month = {11},
+pages = {},
+title = {Greedy Algorithms for Optimizing Multivariate Horner Schemes},
+volume = {38},
+journal = {ACM SIGSAM Bulletin},
+doi = {10.1145/980175.980179}
+}
+
+@article{Runge1895,
+  title = {Ueber die numerische Auflösung von Differentialgleichungen},
+  author = {C. Runge},
+  journal = {Math. Ann.},
+  year = {1895},
+  volume = {46},
+  pages ={167},
+}
+
+@article{valentijn2015goppa,
+  title={Goppa Codes and Their Use in the McEliece Cryptosystems},
+  author={Valentijn, Ashley},
+  year={2015}
+}
+
+@article{NGUYEN2020105344,
+title = "Greedy algorithms and Kolmogorov widths in Banach spaces",
+journal = "J. Approxim. Theory",
+volume = "251",
+pages = "105344",
+year = "2020",
+issn = "0021-9045",
+doi = "10.1016/j.jat.2019.105344",
+author = "Van Kien Nguyen",
+}
+
+@article{WOJTASZCZYK2015685,
+title = "On greedy algorithm approximating Kolmogorov widths in Banach spaces",
+journal = "J. Math. Anal. Appl.",
+volume = "424",
+pages = "685--695",
+year = "2015",
+issn = "0022-247X",
+doi = "10.1016/j.jmaa.2014.11.054",
+author = "P. Wojtaszczyk",
+}
+
+@article{Canizares:2013ywa,
+      author         = "Canizares, Priscilla and Field, Scott E. and Gair,
+                        Jonathan R. and Tiglio, Manuel",
+      title          = "{Gravitational wave parameter estimation with compressed
+                        likelihood evaluations}",
+      journal        = "Phys. Rev.",
+      volume         = "D87",
+      pages          = "124005",
+      doi            = "10.1103/PhysRevD.87.124005",
+      year           = "2013",
+}
+
+@Book{Quarteroni2010,
+  author = {Quarteroni, Alfio and Sacco,  Riccardo and Fausto Saleri},
+  title = {Numerical Mathematics},
+  publisher = {Springer}, 
+  address = "Berlin",
+  year = {2010},
+  doi = {10.1007/b98885}
+}
+
+@book{Press92,
+        key     = {Press92},
+        author  = {W. H. Press and B. P. Flannery and Saul A. Teukolsky
+                   and W. T. Vetterling},
+        title   = {Numerical Recipes},
+        edition = "2nd",
+        publisher = {Cambridge University Press},
+        year    = 1992,
+        address = {New York},
+        doi = {10.1119/1.14981}
+}
+
+
+@article{Devore2012,
+	year={2013},
+	issn={0176-4276},
+	journal={Constructive Approximation},
+	volume={37},
+	number={3},
+	doi={10.1007/s00365-013-9186-2},
+	title={Greedy Algorithms for Reduced Bases in Banach Spaces},
+	publisher={Springer},
+	keywords={Greedy algorithms; Convergence rates; Reduced basis; General Banach space; 41A46; 41A25; 46B20; 15A15},
+	author={DeVore, Ronald and Petrova, Guergana and Wojtaszczyk, Przemyslaw},
+	pages={455-466}
+}
+
+@article{GAUTSCHI1983293,
+title = "The condition of Vandermonde-like matrices involving orthogonal polynomials",
+journal = "Linear Algebra and its Applications",
+volume = "52-53",
+pages = "293--300",
+year = "1983",
+issn = "0024-3795",
+doi = "10.1016/0024-3795(83)80020-2",
+author = "Walter Gautschi",
+}
+@article{Rozza2013,
+author = {Lassila, Toni and Manzoni, Andrea and Quarteroni, Alfio and Rozza, Gianluigi},
+year = {2013},
+month = {02},
+pages = {},
+title = {Generalized Reduced Basis Methods and n-Width Estimates for the Approximation of the Solution Manifold of Parametric PDEs},
+volume = {1},
+journal = {Bollettino della Unione Matematica Italiana. Series IX},
+doi = {10.1007/978-88-470-2592-9_16}
+}
+
+@article{sorensen2010,
+author = {Chaturantabut, Saifon and Sorensen, Danny},
+year = {2010},
+month = {01},
+pages = {2737-2764},
+title = {Nonlinear Model Reduction via Discrete Empirical Interpolation},
+volume = {32},
+journal = {SIAM J. Scientific Computing},
+doi = {10.1137/090766498}
+}
+
+@article{Villanueva2020,
+	author={Manuel Tiglio and Aaron Villanueva},
+	title={On the stability and accuracy of the Empirical Interpolation Method and Gravitational Wave Surrogates},
+	journal={Class. Quantum Grav.},
+	doi={10.1088/1361-6382/abf894},
+	year={2021}
+}
+
+@article{Kuian2019OptimallyCV,
+  title={Optimally Conditioned Vandermonde-Like Matrices},
+  author={Mykhailo Kuian and Lothar Reichel and Sergij V. Shiyanovskii},
+  journal={SIAM J. Matrix Analysis Applications},
+  year={2019},
+  volume={40},
+  pages={1399-1424},
+  doi={10.1137/19M1237272}
+}
+
+@article{quarteroni2011,
+author = {Quarteroni, Alfio and Rozza, Gianluigi and Manzoni, Andrea},
+year = {2011},
+month = {01},
+pages = {},
+title = {Certified Reduced Basis Approximation for Parametrized Partial Differential Equations and Applications},
+volume = {1},
+journal = {J. Math. Industry},
+doi = {10.1186/2190-5983-1-3}
+}
+
+@incollection{Higham2013NumericalC,
+author="Higham, Nicholas J.",
+editor="Brezinski, Claude and Sameh, Ahmed",
+title="Numerical conditioning",
+bookTitle="Walter Gautschi, Volume 1: Selected Works with Commentaries",
+year="2014",
+publisher="Springer",
+address="New York",
+pages="37--40",
+isbn="978-1-4614-7034-2",
+doi="10.1007/978-1-4614-7034-2_5"
+}
+
+
+@article{Reichel1991ChebyshevVandermondeS,
+  title={Chebyshev-Vandermonde systems},
+  author={Lothar Reichel and Gerhard Opfer},
+  journal = {Math. Comp.},
+  volume = {57},
+  pages = {703-721},
+  year={1991},
+  doi={10.2307/2938712}
+}
+
+@article{Pan2015HowBA,
+  title={How Bad Are Vandermonde Matrices?},
+  author={Victor Y. Pan},
+  journal={SIAM J. Matrix Analysis Applications},
+  year={2015},
+  volume={37},
+  pages={676-694},
+  doi={10.1137/15M1030170}
+}
+
+@article{Demmel2006AccurateSO,
+title = "Accurate SVDs of polynomial Vandermonde matrices involving orthonormal polynomials",
+journal = "Linear Algebra Appl.",
+volume = "417",
+pages = "382--396",
+year = "2006",
+note = "Special Issue in honor of Friedrich Ludwig Bauer",
+issn = "0024-3795",
+doi = "10.1016/j.laa.2005.09.014",
+author = "James Demmel and Plamen Koev",
+}
+
+@inproceedings{Li2005VandermondeMW,
+  title={Vandermonde matrices with Chebyshev nodes},
+  author={Ren-Cang Li},
+  year={2005}
+}
+
+@article{Gautschi2011OptimallySA,
+  title={Optimally scaled and optimally conditioned Vandermonde and Vandermonde-like matrices},
+  author={Walter Gautschi},
+  journal={BIT Numerical Mathematics},
+  year={2011},
+  volume={51},
+  pages={103-125},
+  doi={10.1007/s10543-010-0293-1}
+}
+
+@inproceedings{Gautschi2012HowU,
+  booktitle={Asymptotic and Computational Analysis},
+  title={How (Un) stable Are Vandermonde Systems?},
+  author={Walter Gautschi},
+  year={2012},
+  doi={10.1201/9781003072584-9}
+}
+
+@INPROCEEDINGS{Chaturantabut5400045,
+author={Chaturantabut, S. and Sorensen, D.C.},
+booktitle={Decision and Control, 2009 held jointly with the 2009 28th Chinese Control Conference. CDC/CCC 2009. Proceedings of the 48th IEEE Conference on},
+title={Discrete Empirical Interpolation for nonlinear model reduction},
+year={2009},
+month={dec.},
+volume={},
+number={},
+pages={4316 -4321},
+keywords={1-D FitzHugh-Nagumo equations;arbitrary systems;computational complexity;dimension reduction method;discrete empirical interpolation method;finite difference discretization;finite dimensional function space;higher spatial dimensions;nonlinear ODE;nonlinear limit cycle behavior;nonlinear model reduction;ordinary differential equations;parametrically dependent steady state problems;parametrized nonlinear partial differential equations;proper orthogonal decomposition method;reduced-order models;standard POD-Galerkin technique;state space dimension reduction;unsteady nonlinear partial differential equations;unsteady time dependent PDE;computational complexity;nonlinear differential equations;nonlinear systems;partial differential equations;reduced order systems;},
+doi={10.1109/CDC.2009.5400045},
+ISSN={0191-2216},}
+
+@article{Maday_2009,
+ author = {Maday, Y. and Nguyen, N.~.C and Patera, A.~T. and Pau, S.~H.},
+ title = {A general multipurpose interpolation procedure: the magic points},
+ journal = {Communications on Pure and Applied Analysis},
+ doi = {10.3934/cpaa.2009.8.383},
+ volume = {8},
+ year = {2009},
+ pages = {383--404}
+}
+
+@article{10.2307/2323093,
+author = {Epperson, James F.},
+title = {On the Runge Example},
+year = {1987},
+issue_date = {April 1987},
+publisher = {Mathematical Association of America},
+address = {USA},
+volume = {94},
+issn = {0002-9890},
+doi = {10.2307/2323093},
+journal = {Am. Math. Monthly},
+month = apr,
+pages = {329–341},
+numpages = {13}
+}
+
+
+ }
+
+@article {DBSzyld_2006a,
+    AUTHOR = {Szyld, Daniel B.},
+     TITLE = {The many proofs of an identity on the norm of oblique
+              projections},
+   JOURNAL = {Numer. Algorithms},
+  FJOURNAL = {Numerical Algorithms},
+    VOLUME = {42},
+      YEAR = {2006},
+     PAGES = {309--323},
+      ISSN = {1017-1398},
+   MRCLASS = {46C05 (15A24)},
+  MRNUMBER = {2279449 (2007k:46040)},
+MRREVIEWER = {Vladimir Rako{\v{c}}evi{\'c}},
+       DOI = {10.1007/s11075-006-9046-2}
+}
+
+@article {JXu_LZikatanov_2003a,
+    AUTHOR = {Xu, Jinchao and Zikatanov, Ludmil},
+     TITLE = {Some observations on Babu\v ska and Brezzi theories},
+   JOURNAL = {Numer. Math.},
+  FJOURNAL = {Numerische Mathematik},
+    VOLUME = {94},
+      YEAR = {2003},
+     PAGES = {195--202},
+      ISSN = {0029-599X},
+     CODEN = {NUMMA7},
+   MRCLASS = {65N30 (65N15)},
+  MRNUMBER = {1971217 (2004a:65160)},
+MRREVIEWER = {Srinivasan Kesavan},
+       DOI = {10.1007/s002110100308}
+}
+  
+  
+@book{Trefethen:2012:ATA:2430658,
+ author = {Trefethen, Lloyd N.},
+ title = {Approximation Theory and Approximation Practice (Other Titles in Applied Mathematics)},
+ year = {2012},
+ isbn = {1611972396, 9781611972399},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia},
+} 
+
+@article{Abbott:2020qfu,
+    author = "Abbott, B. P. and others [{KAGRA Collaboration}, {LIGO Scientific Collaboration} and {Virgo Collaboration}]",
+    collaboration = "KAGRA, LIGO Scientific, Virgo",
+    title = "{Prospects for observing and localizing gravitational-wave transients with Advanced LIGO, Advanced Virgo and KAGRA}",
+    doi = "10.1007/s41114-020-00026-9",
+    journal = "Living Rev. Relativ.",
+    volume = "23",
+    pages = "3",
+    year = "2020"
+}
+  
+@book{metropolis1980history,
+  title={A history of computing in the twentieth century: a collection of essays},
+  author={Metropolis, N. and Howlett, J. and Rota, G.C.},
+  isbn={9780124916500},
+  lccn={79051683},
+  year={1980},
+  publisher={Academic Press}
+}
+
+@misc{IBM7090,
+  format   = {project homepage},
+  key      = {IBM},
+  title    = {IBM archives},
+  url      = {http://www-03.ibm.com/ibm/history/exhibits/mainframe/mainframe_PP7090.html}
+}
+
+@misc{gwsurr,
+  note      = {Accessed 31 May 2021},
+  key       = {GWSurrogate},
+  publisher = {},
+  title     = {{GWSurrogate}},
+  url       = {https://pypi.org/project/gwsurrogate/},
+  year      = {2014--2020}
+}
+
+@misc{catalog,
+  author    = {Scott E. Field and Chad R. Galley and Jan S. Hesthaven and Jason Kaye and Manuel Tiglio and Jonathan Blackman and B\'ela Szil\'agyi and Mark A. Scheel and Daniel A. Hemberger and Patricia Schmidt and Rory Smith and Christian D. Ott and Michael Boyle and Lawrence E. Kidder and Harald P. Pfeiffer and Vijay Varma},
+  publisher = {},
+  title     = {Binary black-hole surrogate waveform catalog},
+  doi       = {10.5281/zenodo.3629749},
+  year      = {2019}
+}
+
+@misc{surfinBH,
+  author    = {Vijay Varma},
+  note      = {Accessed 31 May 2021},
+  publisher = {},
+  title     = {surfinBH},
+  url       = {https://pypi.org/project/surfinBH/},
+  year      = {2020}
+}
+
+@article{Lovelace_2016,
+   title={Modeling the source of GW150914 with targeted numerical-relativity simulations},
+   volume={33},
+   ISSN={1361-6382},
+   DOI={10.1088/0264-9381/33/24/244002},
+   number={24},
+   journal={Class. Quantum Grav.},
+   publisher={IOP Publishing},
+   author={Lovelace, Geoffrey and Lousto, Carlos O and Healy, James and Scheel, Mark A and Garcia, Alyssa and O’Shaughnessy, Richard and Boyle, Michael and Campanelli, Manuela and Hemberger, Daniel A and Kidder, Lawrence E and et al.},
+   year={2016},
+   month={Nov},
+   pages={244002}
+}
+
+@misc{spec,
+  key       = {{SpEC}},
+  note      = {Accessed 31 May 2021},
+  publisher = {},
+  title     = {Spectral Einstein Code},
+  url       = {https://www.black-holes.org/code/SpEC.html}
+}
+
+@article{Harbrecht2012428,
+title = "On the low-rank approximation by the pivoted Cholesky decomposition",
+journal = "Appl. Numer. Math.",
+volume = "62",
+pages = "428--440",
+year = "2012",
+note = "Third Chilean Workshop on Numerical Analysis of Partial Differential Equations (WONAPDE 2010)",
+issn = "0168-9274",
+doi = "10.1016/j.apnum.2011.10.001",
+author = "Helmut Harbrecht and Michael Peters and Reinhold Schneider",
+}
+
+@misc{LAL-ROQ,
+  cited     = {18 January 2021},
+  publisher = {},
+  title     = {LAL-ROQ},
+  url       = {http://www.ligo.caltech.edu/~vraymond}
+}
+
+
+@article{Smith:2012du,
+  title = {Towards rapid parameter estimation on gravitational waves from compact binaries using interpolated waveforms},
+  author = {Smith, R. J. E. and Cannon, K. and Hanna, C. and Keppel, D. and Mandel, I.},
+  journal = {Phys. Rev. D},
+  volume = {87},
+  pages = {122002},
+  numpages = {7},
+  year = {2013},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.87.122002}
+}
+
+
+@techreport{techrep:aLIGOsensitivity,
+  author = {{LIGO Scientific Collaboration}},  
+  year = {2010},
+  title = {{Advanced LIGO anticipated sensitivity curves}},
+  number = "{LIGO-T0900288-v3}",
+  institution = {LSC}
+}
+
+
+@ARTICLE{2013PhRvD..88f2001A,
+      author         = "Aasi, J. and others [{LIGO Collaboration} and {Virgo Collaboration}]",
+      title          = "{Parameter estimation for compact binary coalescence
+                        signals with the first generation gravitational-wave
+                        detector network}",
+      collaboration  = "LIGO Collaboration, Virgo Collaboration",
+      journal        = "Phys.Rev.",
+      volume         = "D88",
+      pages          = "062001",
+      doi            = "10.1103/PhysRevD.88.062001",
+      year           = "2013"
+}
+
+@misc{LAL_software,
+  cited     = {18 January 2021},
+  publisher = {},
+  title     = {LAL},
+  url       = {https://www.lsc-group.phys.uwm.edu/daswg/\\projects/lalsuite.html}
+}
+
+@ARTICLE{Raymond:2009,
+  author = {V. Raymond and M. V. van der Sluys and I. Mandel and V. Kalogera
+	and C. Rover and N. Christensen},
+  title = {{Degeneracies in Sky Localisation Determination from a Spinning Coalescing
+	Binary through Gravitational Wave Observations: a Markov-Chain Monte-Carlo
+	Analysis for two Detectors}},
+  journal = {Class. Quant. Grav.},
+  year = {2009},
+  volume = {26},
+  pages = {114007},
+  owner = {rorysmith},
+  timestamp = {2012.10.10}
+}
+
+@ARTICLE{Smith:2012,
+  title = {Towards rapid parameter estimation on gravitational waves from compact binaries using interpolated waveforms},
+  author = {Smith, R. J. E. and Cannon, K. and Hanna, C. and Keppel, D. and Mandel, I.},
+  journal = {Phys. Rev. D},
+  volume = {87},
+  pages = {122002},
+  numpages = {7},
+  year = {2013},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.87.122002}
+}
+
+
+@article{PanEOBNR:2011,
+  title = {Inspiral-merger-ringdown multipolar waveforms of nonspinning black-hole binaries using the effective-one-body formalism},
+  author = {Pan, Yi and Buonanno, Alessandra and Boyle, Michael and Buchman, Luisa T. and Kidder, Lawrence E. and Pfeiffer, Harald P. and Scheel, Mark A.},
+  journal = {Phys. Rev. D},
+  volume = {84},
+  pages = {124052},
+  numpages = {26},
+  year = {2011},
+  month = {Dec},
+  doi = {10.1103/PhysRevD.84.124052},
+  publisher = {American Physical Society},
+  owner = {rorysmith}
+}
+
+@incollection{Civril2008d,
+  title={Deterministic sparse column based matrix reconstruction via greedy approximation of SVD},
+  author={Civril, Ali and Magdon-Ismail, Malik},
+  booktitle={Algorithms and Computation},
+  pages={414--423},
+  year={2008},
+  publisher={Springer},
+  doi={10.1007/978-3-540-92182-0_38}
+}
+
+@INPROCEEDINGS{Deshpande2010,
+author={Deshpande, A. and Rademacher, L.},
+booktitle={Foundations of Computer Science (FOCS), 2010 51st Annual IEEE Symposium on},
+title={Efficient Volume Sampling for Row/Column Subset Selection},
+year={2010},
+pages={329-338},
+keywords={approximation theory;computational complexity;deterministic algorithms;matrix multiplication;probability;sampling methods;Frobenius norm;approximation factor;arithmetic operation;complexity;deterministic algorithm;matrix multiplication;probability;row-column subset selection;spectral algorithm;squared volume;volume sampling;Algorithm design and analysis;Approximation algorithms;Approximation methods;Matrix decomposition;Polynomials;Principal component analysis;Vectors;low-rank matrix approximation;row/column subset selection;volume sampling},
+doi={10.1109/FOCS.2010.38},
+ISSN={0272-5428},}
+
+@inproceedings{guruswami2012optimal,
+  title={Optimal column-based low-rank matrix reconstruction},
+  author={Guruswami, Venkatesan and Sinop, Ali Kemal},
+  booktitle={Proceedings of the Twenty-Third Annual ACM-SIAM Symposium on Discrete Algorithms},
+  pages={1207--1214},
+  year={2012},
+  organization={SIAM},
+  doi={10.1137/1.9781611973099.95}
+}
+
+@misc{icerm,
+ key   = {ICERM},
+ note  = {Accessed 31 May 2021},
+ title = {Model and dimension reduction in uncertain and dynamic systems},
+ url   = {https://icerm.brown.edu/programs/sp-s20/},
+ year  = {2020}
+}
+
+@phdthesis{kaye2012,
+author = {J. Kaye},
+title = {The interpolation of gravitational waveforms},
+school = {Brown University},
+year = {2012},
+url ={https://www.brown.edu/research/projects/scientific-computing/reports/2013}
+}
+
+@article{hong1992,
+ ISSN = {00255718, 10886842},
+  author = {Y. P. Hong and C.-T. Pan},
+ journal = {Mathematics of Computation},
+  pages = {213--232},
+ publisher = {American Mathematical Society},
+ title = {Rank-Revealing QR Factorizations and the Singular Value Decomposition},
+ volume = {58},
+ year = {1992},
+ doi  = {10.2307/2153029}
+}
+
+@article{Morisaki_2020,
+    author = "Morisaki, Soichiro and Raymond, Vivien",
+    title = "{Rapid Parameter Estimation of Gravitational Waves from Binary Neutron Star Coalescence using Focused Reduced Order Quadrature}",
+    doi = "10.1103/PhysRevD.102.104020",
+    journal = "Phys. Rev. D",
+    volume = "102",
+    pages = "104020",
+    year = "2020"
+}
+
+@article{PhysRevD.50.R7111,
+  title = {Filtering post-Newtonian gravitational waves from coalescing binaries},
+  author = {Sathyaprakash, B. S.},
+  journal = {Phys. Rev. D},
+  volume = {50},
+  pages = {R7111--R7115},
+  numpages = {0},
+  year = {1994},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.50.R7111},
+}
+
+
+@article{PhysRevD.49.1707,
+  title = {Choice of filters for the detection of gravitational waves from coalescing binaries. II. Detection in colored noise},
+  author = {Dhurandhar, S. V. and Sathyaprakash, B. S.},
+  journal = {Phys. Rev. D},
+  volume = {49},
+  pages = {1707--1722},
+  numpages = {0},
+  year = {1994},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.49.1707}
+}
+
+
+@article{Sathyaprakash_B:91,
+        key     = {Sathyaprakash_B:91},
+        author  = {B. S. Sathyaprakash and S. V. Dhurandhar},
+        title   = {Choice of filters for the detection of gravitational waves from coalescing binaries},
+        journal = {Phys. Rev. D},
+        volume  = {44},
+        year    = 1991,
+        pages   = {3819}
+}
+
+@article{Owen:96,
+  title = {Search templates for gravitational waves from inspiraling binaries: Choice of template spacing},
+  author = {Owen, Benjamin J.},
+  journal = {Phys. Rev. D},
+  volume = {53},
+  pages = {6749--6761},
+  year = {1996},
+  doi = {10.1103/PhysRevD.53.6749}
+}
+
+@article{Owen:1998dk,
+      author         = "Owen, Benjamin J. and Sathyaprakash, B.S.",
+      title          = "{Matched filtering of gravitational waves from
+                        inspiraling compact binaries: Computational cost and
+                        template placement}",
+      journal        = "Phys. Rev.",
+      volume         = "D60",
+      pages          = "022002",
+      doi            = "10.1103/PhysRevD.60.022002",
+      year           = "1999"
+}
+
+@article{PhysRevD.95.104023,
+  title = {A Surrogate model of gravitational waveforms from numerical relativity simulations of precessing binary black hole mergers},
+  author = {Blackman, Jonathan and Field, Scott E. and Scheel, Mark A. and Galley, Chad R. and Hemberger, Daniel A. and Schmidt, Patricia and Smith, Rory},
+  journal = {Phys. Rev. D},
+  volume = {95},
+  pages = {104023},
+  numpages = {35},
+  year = {2017},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.95.104023},
+}
+
+
+@article{PhysRevD.96.024058,
+  title = {Numerical relativity waveform surrogate model for generically precessing binary black hole mergers},
+  author = {Blackman, Jonathan and Field, Scott E. and Scheel, Mark A. and Galley, Chad R. and Ott, Christian D. and Boyle, Michael and Kidder, Lawrence E. and Pfeiffer, Harald P. and Szil\'agyi, B\'ela},
+  journal = {Phys. Rev. D},
+  volume = {96},
+  pages = {024058},
+  numpages = {10},
+  year = {2017},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.96.024058},
+}
+
+@article{PhysRevLett.115.121102,
+  title = {Fast and Accurate Prediction of Numerical Relativity Waveforms from Binary Black Hole Coalescences Using Surrogate Models},
+  author = {Blackman, Jonathan and Field, Scott E. and Galley, Chad R. and Szil\'agyi, B\'ela and Scheel, Mark A. and Tiglio, Manuel and Hemberger, Daniel A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {115},
+  pages = {121102},
+  numpages = {6},
+  year = {2015},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.115.121102},
+}
+
+@ARTICLE{Pan1966,
+       author = {{Pan}, V. Ya},
+        title = "{Methods of Computing Values of Polynomials}",
+      journal = {Russian Math. Surveys},
+         year = 1966,
+        month = feb,
+       volume = {21},
+           pages = {105-136},
+          doi = {10.1070/RM1966v021n01ABEH004147},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@phdthesis{London:2015ytg,
+    author = "London, Lionel",
+    title = "{On gravitational wave modeling: numerical relativity data analysis, the excitation of Kerr quasinormal modes, and the unsupervised machine learning of waveform morphology}",
+    school = "Georgia Tech",
+    year = "2015"
+}
+
+
+@article{PhysRevX.4.031006,
+  title = {Fast Prediction and Evaluation of Gravitational Waveforms Using Surrogate Models},
+  author = {Field, Scott E. and Galley, Chad R. and Hesthaven, Jan S. and Kaye, Jason and Tiglio, Manuel},
+  journal = {Phys. Rev. X},
+  volume = {4},
+  pages = {031006},
+  numpages = {21},
+  year = {2014},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevX.4.031006},
+}
+
+@book{jaranowski2009,
+place={Cambridge},
+series={Cambridge Monographs on Particle Physics, Nuclear Physics and Cosmology}, title={Analysis of Gravitational-Wave Data},
+DOI={10.1017/CBO9780511605482},
+publisher={Cambridge University Press}, 
+author={Jaranowski, Piotr and Krolak, Andrzej}, 
+year={2009}, 
+collection={Cambridge Monographs on Particle Physics, Nuclear Physics and Cosmology}
+}
+
+@article{Field:2012if,
+      author         = "Field, Scott E. and Galley, Chad R.
+                        and Ochsner, Evan",
+      title          = "{Towards beating the curse of dimensionality for
+                        gravitational waves using Reduced Basis}",
+      journal        = "Phys. Rev.",
+      volume         = "D86",
+      pages          = "084046",
+      year           = "2012",
+      url = {https://inspirehep.net/literature/1116236}
+}
+%      doi            = "10.1103/PhysRevD.86.084046",
+
+@article{Blackman:2014maa,
+    author = "Blackman, Jonathan and Szilagyi, Bela and Galley, Chad R. and Tiglio, Manuel",
+    doi = "10.1103/PhysRevLett.113.021101",
+    journal = "Phys. Rev. Lett.",
+    pages = "021101",
+    title = "{Sparse Representations of Gravitational Waves from Precessing Compact Binaries}",
+    volume = "113",
+    year = "2014"
+}
+
+@misc{LaxReport,
+  format   = {project homepage},
+    title    = {Report of the panel on Large Scale Computing in Science and Engineering},
+  url      = {http://www.pnl.gov/scales/docs/lax_report1982.pdf}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%  ATP REFERENCES ADDED BY FRANK
+
+@misc{MIT_phoneComputing,
+ author = {L. Hardesty},
+ title = {Supercomputing on a cell phone},
+ url = {http://web.mit.edu/newsoffice/2010/supercomputer-smart-phones-0901.html},
+}
+
+@misc{MIT_phoneComputingSoftware,
+ title = {rbAPPmit Client Software},
+ url = {http://augustine.mit.edu/methodology/methodology_rbAPPmit_Client_Software.htm},
+}
+
+@misc{stamm10,
+  author = {B. Stamm},
+  title = {An Introduction to the Reduced Basis Method},
+  year = "2010",
+  url = {http://www.dam.brown.edu/people/bstamm/}
+}	
+
+%
+%%%%%%%%%%%%%%%%% Reduced Basis Methods %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@incollection {MHinze_SVolkwein_2005a,
+   AUTHOR = {M. Hinze and S. Volkwein},
+  FAUTHOR = {Hinze, Michael and Volkwein, Stefan},
+    TITLE = {Proper orthogonal decomposition surrogate models for nonlinear
+             dynamical systems: error estimates and suboptimal control},
+BOOKTITLE = {Dimension reduction of large-scale systems},
+   SERIES = {Lect. Notes Comput. Sci. Eng.},
+   VOLUME = {45},
+    PAGES = {261--306},
+PUBLISHER = {Springer},
+  ADDRESS = {Berlin},
+     YEAR = {2005},
+  MRCLASS = {49M27 (65Mxx 76D55 76M10 93B11)},
+ MRNUMBER = {MR2503787},
+}
+
+@article{Boyaval20093187,
+title = "A reduced basis approach for variational problems with stochastic parameters: Application to heat conduction with variable {Robin} coefficient",
+journal = "Comput. Methods Appl. Mech. Eng.",
+volume = "198",
+pages = "3187--3206",
+year = "2009",
+issn = "0045-7825",
+doi = "10.1016/j.cma.2009.05.019",
+author = "Sébastien Boyaval and Claude Le Bris and Yvon Maday and Ngoc Cuong Nguyen and Anthony T. Patera",
+}
+
+@Article{Buffa09,
+     author    = "A. Buffa and Y. Maday and A. T. Patera and C. Prud'homme and G. Turinici",
+     title     = "{A priori convergence of multi-dimensional parametrized reduced-basis approximations}",
+     year      = "2009",
+     journal   = "submitted"
+}
+
+@phdthesis{Bui:2007,
+ author = {Bui-Thanh, T.},
+ title = {Model-Constrained Optimization Methods for Reduction of Parameterized Large-Scale Systems},
+ school = {Massachusetts Institute of Technology},
+ year = {2007}
+}
+
+@article{Chen:2010:CRB:1958598.1958625,
+ author = {Chen, Yanlai and Hesthaven, Jan S. and Maday, Yvon and Rodr\'{\i}guez, Jer\'{o}nimo},
+ title = {Certified Reduced Basis Methods and Output Bounds for the Harmonic Maxwell's Equations},
+ journal = {SIAM J. Sci. Comput.},
+ issue_date = {March 2010},
+ volume = {32},
+ issue = {2},
+ month = {March},
+ year = {2010},
+ issn = {1064-8275},
+ pages = {970--996},
+ numpages = {27},
+ doi = {10.1137/09075250X},
+ acmid = {1958625},
+ publisher = {Society for Industrial and Applied Mathematics},
+ address = {Philadelphia},
+ } 
+
+@article {Eftang:2011,
+author = {Eftang, Jens L. and Stamm, Benjamin},
+title = {Parameter multi-domain empirical interpolation},
+journal = {Int. J. Numer. Methods Eng.},
+volume = {90},
+publisher = {John Wiley & Sons, Ltd},
+issn = {1097-0207},
+doi = {10.1002/nme.3327},
+pages = {412--428},
+year = {2012},
+}
+
+
+@article{Eftang:2010,
+ author = {Eftang, J. L. and Patera, A. T. and Ronquist, E. M.},
+ title = {An hp certified reduced basis method for parametrized elliptic partial differential equations},
+ journal = {SIAM J. Sci. Comput.},
+ volume = {32},
+ issue ={6},
+ pages = {3170--3200},
+ year = {2010},
+ url = {https://dspace.mit.edu/handle/1721.1/58468}
+}
+
+% publisher = {Society for Industrial and Applied Mathematics},
+
+@article{EftangThesis,
+author = {Eftang, J. L.},
+title = {Reduced basis methods for parametrized partial differential equations},
+publisher = {Norwegian University of Science and Technology},
+year = {2011}
+}
+
+@article{Fares20115532,
+title = "The reduced basis method for the electric field integral equation",
+journal = "J. Comput. Phys.",
+volume = "230",
+pages = "5532--5555",
+year = "2011",
+issn = "0021-9991",
+doi = "10.1016/j.jcp.2011.03.023",
+author = "M. Fares and J.S. Hesthaven and Y. Maday and B. Stamm",
+}
+
+@Article{Fox71,
+     author    = "R. L. Fox and H. Miura",
+     title     = "{An approximate analysis technique for design calculations}",
+     year      = "1971",
+     journal   = "AIAA Journal",
+     volume    = "9(1)",
+     pages     = "177-179"
+}
+
+@article{FLD:FLD867,
+author = {Veroy, K. and Patera, A. T.},
+title = {Certified and real-time solution of parameterized steady incompressible Navier-Stokes equations: rigorous reduced-basis a posteriori error bounds},
+journal = {Int. J. Numer. Methods Fluids},
+volume = {47},
+publisher = {John Wiley & Sons, Ltd.},
+issn = {1097-0363},
+doi = {10.1002/fld.867},
+pages = {773-788},
+year = {2005}
+}
+
+﻿@article{FLD:FLD67,
+author = {Ravindran, S. S.},
+title = {A reduced-order approach for optimal control of fluids using proper orthogonal decomposition},
+journal = {Int. J. Numer. Methods Fluids},
+volume = {34},
+publisher = {John Wiley & Sons, Ltd.},
+issn = {1097-0363},
+doi = {10.1002/1097-0363(20001115)34:5<425::AID-FLD67>3.0.CO;2-W},
+pages = {425--448},
+year = {2000}
+}
+
+@article{Haasdonk:2010,
+ author = {Haasdonk, B. and Dihlmann, M. and Ohlberger, M.},
+ title = {A Training Set and Multiple Bases Generation Approach for Parametrized Model Reduction Based on Adaptive Grids in Parameter Space},
+ year = {2010},
+ issue = {28},
+ journal = {Tech. Report, SRC SimTech}
+}
+
+@article{Knezevic20111455,
+title = "A high-performance parallel implementation of the certified reduced basis method",
+journal = "Comput. Methods Appl. Mech. Eng.",
+volume = "200",
+pages = "1455--1466",
+year = "2011",
+issn = "0045-7825",
+doi = "10.1016/j.cma.2010.12.026",
+author = "David J. Knezevic and John W. Peterson",
+}
+
+@article{PhysRevD.82.044025,
+  title = {Singular value decomposition applied to compact binary coalescence gravitational-wave signals},
+  author = {Cannon, K. and Chapman, A. and Hanna, C. and Keppel, D. and Searle, Antony C. and Weinstein, Alan J.},
+  journal = {Phys. Rev. D},
+  volume = {82},
+  pages = {044025},
+  numpages = {6},
+  year = {2010},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.82.044025}
+}
+
+
+@article{Buffa2012,
+author = {Buffa, Annalisa and Maday, Yvon and Patera, Anthony and Prud'homme, Christophe and Turinici, Gabriel},
+year = {2012},
+month = {05},
+pages = {},
+title = {A priori convergence of the Greedy algorithm for the parametrized reduced basis method},
+volume = {46},
+journal = {ESAIM: Mathematical Modelling and Numerical Analysis},
+doi = {10.1051/m2an/2011056}
+}
+
+@book{PateraBook,
+     author    = "A.T. Patera and G. Rozza",
+     title     = "Reduced Basis Approximation and A Posteriori Error Estimation for Parametrized Partial Differential Equations",
+     publisher = "to appear in (tentative rubric) MIT Pappalardo Graduate Monographs in Mechanical Engineering. http://augustine.mit.edu/methodology/methodology\_bookPartI.htm"
+}
+
+@Article{PateraReview,
+     author    = "A.T. Patera and G. Rozza",
+     title     = "{Reduced basis approximation and a posteriori error estimation for affinely parametrized elliptic coercive partial differential equations: application to transport and continuum mechanics}",
+     journal   = "Arch. Comput. Methods Eng.",
+     volume    = "15",
+     year      = "2008",
+     pages     = "229-275"
+}
+
+@article{Veroy2003619,
+title = "Reduced-basis approximation of the viscous Burgers equation: rigorous a posteriori error bounds",
+journal = "Comptes Rendus Math.",
+volume = "337",
+pages = "619--624",
+year = "2003",
+issn = "1631-073X",
+doi = "10.1016/j.crma.2003.09.023",
+author = "Karen Veroy and Christophe Prud'homme and Anthony T. Patera"
+}
+
+@Article{Abadie:2010cfa,
+     author    = "Abadie, J. and others",
+ collaboration = "LIGO Scientific",
+     title     = "{Predictions for the Rates of Compact Binary Coalescences
+                  Observable by Ground-based Gravitational-wave Detectors}",
+     journal   = "Class. Quantum Grav.",
+     volume    = "27",
+     year      = "2010",
+     pages     = "173001",
+     eprint    = "1003.2480",
+     archivePrefix = "arXiv",
+     primaryClass  =  "Unknown",
+     doi       = "10.1088/0264-9381/27/17/173001",
+     SLACcitation  = "%%CITATION = 1003.2480;%%"
+}
+
+
+%=============================================
+% ACTUAL ENTRIES
+%=============================================
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{antil2012two,
+year={2013},
+issn={0885-7474},
+journal={J. Sci. Comput.},
+volume={57},
+number={3},
+doi={10.1007/s10915-013-9722-z},
+title={Two-Step Greedy Algorithm for Reduced Order Quadratures},
+publisher={Springer US},
+keywords={Greedy algorithms; Empirical interpolation; Numerical quadrature; Low rank approximation; Matched filtering; Gravitational waves},
+author={Antil, H. and Field, Scott E. and Herrmann, F. and Nochetto, Ricardo H. and Tiglio, M.},
+pages={604-637},
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% B
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{Barrault2004667,
+title = "An ‘empirical interpolation’ method: application to efficient reduced-basis discretization of partial differential equations ",
+journal = "Comptes Rendus Mathematique ",
+volume = "339",
+pages = "667--672",
+year = "2004",
+issn = "1631-073X",
+doi = "10.1016/j.crma.2004.08.006",
+author = "Maxime Barrault and Yvon Maday and Ngoc Cuong Nguyen and Anthony T. Patera"
+}
+
+@Article{Beat2012,
+       author = {{Field}, Scott E. and {Galley}, Chad R. and {Ochsner}, Evan},
+        title = "{Towards beating the curse of dimensionality for gravitational waves using reduced basis}",
+      journal = {\prd},
+         year = 2012,
+        month = oct,
+       volume = {86},
+      url = {https://inspirehep.net/literature/1116236}
+}
+%          eid = {084046},
+%        pages = {084046},
+%          doi = {10.1103/PhysRevD.86.084046},
+%archivePrefix = {arXiv},
+%       eprint = {1205.6009},
+% primaryClass = {gr-qc},
+%       adsurl = {https://ui.adsabs.harvard.edu/abs/2012PhRvD..86h4046F},
+%      adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+
+@article{Binev10convergencerates,
+  author = {Peter Binev and Albert Cohen and Wolfgang Dahmen and Ronald A. DeVore and Guergana Petrova and Przemyslaw Wojtaszczyk},
+  journal = {SIAM J. Math. Analysis},
+    pages = {1457-1472},
+  title = {Convergence Rates for Greedy Algorithms in Reduced Basis Methods},
+  volume = 43,
+  year = 2011,
+  url = {https://www.researchgate.net/publication/220132479_Convergence_Rates_for_Greedy_Algorithms_in_Reduced_Basis_Methods}
+}
+
+@article{Broomhead88Lowe,
+    author = {Broomhead, D. and Lowe, D.},
+    journal = {Complex Systems},
+    pages = {321--355},
+    title = {{Multivariable functional interpolation and adaptive networks}},
+    volume = {2},
+    year = {1988}
+}
+
+@article{Buonanno:2009zt,
+      author         = "Buonanno, Alessandra and Iyer, Bala and Ochsner, Evan and
+                        Pan, Yi and Sathyaprakash, B.S.",
+      title          = "{Comparison of post-Newtonian templates for compact
+                        binary inspiral signals in gravitational-wave detectors}",
+      journal        = "Phys. Rev. D",
+      volume         = "80",
+      pages          = "084043",
+      doi            = "10.1103/PhysRevD.80.084043",
+      year           = "2009"
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% C
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@inproceedings{Carr:2001:RRO:383259.383266,
+ author = {Carr, J. C. and Beatson, R. K. and Cherrie, J. B. and Mitchell, T. J. and Fright, W. R. and McCallum, B. C. and Evans, T. R.},
+ title = {Reconstruction and representation of 3D objects with radial basis functions},
+ booktitle = {Proceedings of the 28th annual conference on Computer graphics and interactive techniques},
+ series = {SIGGRAPH '01},
+ year = {2001},
+ isbn = {1-58113-374-X},
+ pages = {67--76},
+ numpages = {10},
+ doi = {10.1145/383259.383266},
+ acmid = {383266},
+ publisher = {ACM},
+ address = {New York},
+ } 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% D
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@inproceedings{daCostaRibeiro:2011:CSS:2186225.2186298,
+ author = {da Costa Ribeiro, Stephan and Kleinsteuber, Martin and M\"{o}ller, Andreas and Kranz, Matthias},
+ title = {A compressive sensing scheme of frequency sparse signals for mobile and wearable platforms},
+ booktitle = {Proceedings of the 13th international conference on Computer Aided Systems Theory - Volume Part II},
+ series = {EUROCAST'11},
+ year = {2012},
+ isbn = {978-3-642-27578-4},
+ location = {Las Palmas de Gran Canaria, Spain},
+ pages = {510--518},
+ numpages = {9},
+ doi = {10.1007/978-3-642-27579-1_66},
+ acmid = {2186298},
+ publisher = {Springer},
+ address = {Berlin, Heidelberg},
+ } 
+
+@article{Dormand198019,
+  title = "{A family of embedded Runge-Kutta formulae}",
+  journal = "J. Comput. Appl. Math.",
+  volume = "6",
+  pages = "19--26",
+  year = "1980",
+  issn = "0771-050X",
+  doi = "10.1016/0771-050X(80)90013-3",
+  author = "J. R. Dormand and P. J. Prince"
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% E
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{Hoffmann_IMGS,
+year={1989},
+issn={0010-485X},
+journal={Computing},
+volume={41},
+number={4},
+doi={10.1007/BF02241222},
+title={Iterative algorithms for Gram-Schmidt orthogonalization},
+publisher={Springer},
+keywords={65F25; 65G05; 15A23; Gram-Schmidt orthogonalization; QR factorization; vector algorithms},
+author={Hoffmann, Walter},
+pages={335-348}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% F
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% G
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@article{Galley:2010rc,
+      author         = "Galley, Chad R. and Herrmann, Frank and Silberholz, John
+                        and Tiglio, Manuel and Guerberoff, Gustavo",
+      title          = "{Statistical constraints on binary black hole inspiral
+                        dynamics}",
+      journal        = "Class. Quantum Grav.",
+      volume         = "27",
+      pages          = "245007",
+      doi            = "10.1088/0264-9381/27/24/245007",
+      year           = "2010",
+}
+
+@book{Golub96,
+    edition = {3rd},
+    isbn = {0801854148},
+    publisher = {The Johns Hopkins University Press},
+    title = {Matrix Computations (Johns Hopkins Studies in Mathematical Sciences)(3rd Edition)},
+    year = {1996}
+}
+
+@book{golub1993scientific,
+  title={Scientific Computing: An Introduction with Parallel Computing},
+  author={Golub, G.H. and Ortega, J.M.},
+  isbn={9780122892530},
+  lccn={lc93009408},
+  year={1993},
+  publisher={Academic Press}
+}
+
+@article{Giraud, 
+year={2005},
+issn={0029-599X},
+journal={Numerische Mathematik},
+volume={101},
+number={1},
+doi={10.1007/s00211-005-0615-4},
+title={Rounding error analysis of the classical Gram-Schmidt orthogonalization process},
+publisher={Springer},
+keywords={65F25; 65G50; 15A23},
+author={Giraud, Luc and Langou, Julien and Rozloznik, Miroslav and Eshof, Jasper van den},
+pages={87-100}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% H
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% I
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% J
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% K
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% L
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@article{lrr-2009-2,
+  title    = {Physics, Astrophysics and Cosmology with Gravitational Waves},
+  author   = {B.S. Sathyaprakash and Bernard F. Schutz},
+  journal  = {Living Rev. Relativ.},
+  year     = {2009},
+  eid      = {2},
+  volume   = {12},
+    doi      = {10.12942/lrr-2009-2}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% M
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% N
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% O
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% P
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+@article{polynom_multivariate,
+year={2000},
+issn={1019-7168},
+journal={Advances in Computational Mathematics},
+volume={12},
+number={4},
+doi={10.1023/A:1018981505752},
+title={Polynomial interpolation in several variables},
+publisher={Kluwer Academic Publishers},
+keywords={interpolation; multivariate polynomials; Newton approach; divided differences; GrÃ¶bner bases; H-bases},
+author={Gasca, Mariano and Sauer, Thomas},
+pages={377-410},
+language={English}
+}
+
+
+@article{prud'homme:70,
+author = {C. Prud'homme and D. V. Rovas and K. Veroy and L. Machiels and Y. Maday and A. T. Patera and G. Turinici},
+collaboration = {},
+title = {Reliable Real-Time Solution of Parametrized Partial Differential Equations: Reduced-Basis Output Bound Methods},
+publisher = {ASME},
+year = {2002},
+journal = {J. Fluids Eng.},
+volume = {124},
+pages = {70-80},
+doi = {10.1115/1.1448332}
+}
+
+
+@article{PhysRevD.92.044056,
+  title = {Rapid gravitational wave parameter estimation with a single spin: Systematic uncertainties in parameter estimation with the SpinTaylorF2 approximation},
+  author = {Miller, B. and O'Shaughnessy, R. and Littenberg, T. B. and Farr, B.},
+  journal = {Phys. Rev. D},
+  volume = {92},
+  pages = {044056},
+  numpages = {13},
+  year = {2015},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.92.044056}
+}
+
+@book{10.5555/2568154,
+author = {Smith, Ralph C.},
+title = {Uncertainty Quantification: Theory, Implementation, and Applications},
+year = {2013},
+isbn = {161197321X},
+publisher = {SIAM},
+address = {Philadelphia},
+}
+
+
+@article{PhysRevD.94.044031,
+  title = {Fast and accurate inference on gravitational waves from precessing compact binaries},
+  author = {Smith, Rory and Field, Scott E. and Blackburn, Kent and Haster, Carl-Johan and P\"urrer, Michael and Raymond, Vivien and Schmidt, Patricia},
+  journal = {Phys. Rev. D},
+  volume = {94},
+  pages = {044031},
+  numpages = {18},
+  year = {2016},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.94.044031}
+}
+
+@article{PhysRevD.97.044033,
+  title = {Parametrized tests of the strong-field dynamics of general relativity using gravitational wave signals from coalescing binary black holes: Fast likelihood calculations and sensitivity of the method},
+  author = {Meidam, Jeroen and Tsang, Ka Wa and Goldstein, Janna and Agathos, Michalis and Ghosh, Archisman and Haster, Carl-Johan and Raymond, Vivien and Samajdar, Anuradha and Schmidt, Patricia and Smith, Rory and Blackburn, Kent and Del Pozzo, Walter and Field, Scott E. and Li, Tjonnie and P\"urrer, Michael and Van Den Broeck, Chris and Veitch, John and Vitale, Salvatore},
+  journal = {Phys. Rev. D},
+  volume = {97},
+  pages = {044033},
+  numpages = {19},
+  year = {2018},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevD.97.044033}
+}
+
+@article{PhysRevLett.114.071104,
+  title = {Accelerated Gravitational Wave Parameter Estimation with Reduced Order Modeling},
+  author = {Canizares, Priscilla and Field, Scott E. and Gair, Jonathan and Raymond, Vivien and Smith, Rory and Tiglio, Manuel},
+  journal = {Phys. Rev. Lett.},
+  volume = {114},
+  pages = {071104},
+  numpages = {6},
+  year = {2015},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.114.071104}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Q
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% R
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{Ruhe1983591,
+title = "Numerical aspects of gram-schmidt orthogonalization of vectors",
+journal = "Linear Algebra and its Applications ",
+volume = "52",
+pages = "591--601",
+year = "1983",
+issn = "0024-3795",
+doi = "10.1016/0024-3795(83)80037-8",
+author = "Axel Ruhe"
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% S
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@book{Salomon2010,
+  author = "Salomon, David and Motta, Giovanni",
+  title  = "Handbook of Data Compression",
+  edition= "5th",
+  year   = 2010,
+  publisher = "Springer",
+  isbn   = "ISBN 978-1-84882-902-2",
+  doi = {10.1007/978-1-84882-903-9}
+}
+
+@article{Singer:2014qca,
+    author = "Singer, Leo P. and others",
+    title = "{The First Two Years of Electromagnetic Follow-Up with Advanced LIGO and Virgo}",
+    reportNumber = "LIGO-P1300187-V22, LIGO-P1300187-V24, LIGO-P1300187-V25",
+    doi = "10.1088/0004-637X/795/2/105",
+    journal = "Astrophys. J.",
+    volume = "795",
+    number = "2",
+    pages = "105",
+    year = "2014"
+}
+
+@book{Maggiore:1900zz,
+    author = "Maggiore, Michele",
+    title = "{Gravitational Waves. Vol. 1: Theory and Experiments}",
+    isbn = "978-0-19-857074-5, 978-0-19-852074-0",
+    publisher = "Oxford University Press",
+    series = "Oxford Master Series in Physics",
+    year = "2007"
+}
+
+@book{Maggiore:2018sht,
+    author = "Maggiore, Michele",
+    title = "{Gravitational Waves. Vol. 2: Astrophysics and Cosmology}",
+    isbn = "978-0-19-857089-9",
+    publisher = "Oxford University Press",
+    month = "3",
+    year = "2018"
+}
+
+
+
+@article{WANG2019289,
+title = "Non-intrusive reduced order modeling of unsteady flows using artificial neural networks with application to a combustion problem",
+journal = "J. Comput. Phys.",
+volume = "384",
+pages = "289--307",
+year = "2019",
+issn = "0021-9991",
+doi = "10.1016/j.jcp.2019.01.031",
+author = "Qian Wang and Jan S. Hesthaven and Deep Ray",
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% X
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Y
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Z
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% NOTE: below the mess starts. nothing is sorted %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@Article{Marsaglia:1972,
+     author    = "George Marsaglia",
+     title     = "Choosing a Point from the Surface of a Sphere",
+     journal   = "The Annals of Mathematical Statistics",
+     volume    = "43",
+     year      = "1972",
+     pages     = "645-646"
+}
+
+@article{chan1987,
+  title={Rank revealing QR-factorizations},
+  author={Chan, Tony F},
+  journal={Linear Algebra and Its Applications},
+  volume={88},
+  pages={67--82},
+  year={1987},
+  publisher={Elsevier},
+  doi={10.1016/0024-3795(87)90103-0}
+}
+
+
+@ARTICLE{sv1,
+    title = {Spectral vanishing viscosity method for large-eddy simulation of turbulent flow},
+    author = {R. Pasquetti},
+    journal = {J. Sci. Comput.},
+    volume  = {27},
+    pages = {365},
+    year  = {2006}
+}
+
+@ARTICLE{sv2,
+    title = {Mathematical analysis of a spectral hyperviscosity LES model for the simulation of turbulent flows},
+    author = {J. Guermond and S. Prudhomme},
+    jounal = {Mathematical Modeling and Numerical Analysis},
+    volume =  {37},
+    pages  =  {893},
+    year   = {2003}
+} 
+
+@ARTICLE{sv3,
+    title   = {A spectral vanishing viscosity method for stabilizing viscoelastic flows},
+    author  = {X. Ma and V. Symeonidis and G. Karniadakis},
+    journal = {J. Non-Newtonian Fluid Dyn.},
+    volume  =  {115},
+    pages   =  {125},
+    year    =  {2003}
+}
+
+@ARTICLE{sv4,
+     title = {A multidomain spectral method for supersonic reactive flows},
+     author = {W. Dun and D. Gottlieb and J. Jung},
+     journal = {J. Comput. Phys.},
+     volume  = {192},
+     pages   = {325},
+     year    = {2003}
+}   
+
+@ARTICLE{sv5,
+     title = {Enhanced spectral viscosity approximations for conservation laws},
+     author = {A. Gelb and E. Tadmor},
+     journal = {Applied Numerical Mathematics},
+     volume  = {33}, 
+     pages   = {3},
+     year    = {2000}
+}
+ 
+
+@ARTICLE{sv6,
+     title = {Chebyshev-Legendre super viscosity method for nonlinear conservation laws},
+     author = {H. Ma},
+     journal = {SIAM J. Numer. Anal.},
+     volume  = {35},
+     pages   =  {893},
+     year    =   {1998}
+} 
+
+@ARTICLE{sv7,
+     title = {Total variation and error estimates for spectral viscosity approximations}, 
+     author = {E. Tadmor},
+     journal = {Math. Comput.},
+     volume  = {60},
+     pages   =  {245},
+     year    =  {1993}
+}
+
+@phdthesis{Aanonsen2009,
+author = {Tor O. Aanonsen},
+title = {Empirical Interpolation with Application to Reduced Basis Approximations},
+school = {Norwegian University of Science and Technology},
+year = {2009},
+url = {http://hdl.handle.net/11250/258487}
+}
+
+@book{JolliffePCA,
+  author    = {Jolliffe, I.T.},
+  publisher = {Springer},
+  title     = {Principal Component Analysis},
+  address   = {New York},
+  year      = {2002},
+  doi       = {10.1007/b98835}
+}
+
+@misc{datarobot,
+title = {{DataRobot. Enterprise AI. https://www.datarobot.com}},
+}
+
+@article{scikit-learn,
+ title={Scikit-learn: Machine Learning in {P}ython},
+ author={Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.},
+ journal={Journal of Machine Learning Research},
+ volume={12},
+ pages={2825--2830},
+ year={2011}
+}
+
+@article{tiglio2021reduced,
+      title={Reduced Order and Surrogate Models for Gravitational Waves}, 
+      author={Manuel Tiglio and Aarón Villanueva},
+      year={2022},
+      volume = {25},
+      journal = {Living Reviews in Relativity},
+      url = {https://www.researchgate.net/publication/360205358_Reduced_order_and_surrogate_models_for_gravitational_waves}
+}
+%      eprint={2101.11608},
+%      archivePrefix={arXiv},
+%      primaryClass={gr-qc}
+
+@book{gpr2006Rasmussen,
+    author = "Rasmussen, Carl E. and Williams, Christopher k. I.",
+    title = "{Gaussian Processes for Machine Learning}",
+    isbn = "26218253X",
+    publisher = "The MIT Press",
+    series = "Adaptive Computation and Machine Learning series",
+    year = "2006"
+}
+
+@article{Wolpert1996TheLO,
+  title={The Lack of A Priori Distinctions Between Learning Algorithms},
+  author={David H. Wolpert},
+  journal={Neural Computation},
+  year={1996},
+  volume={8},
+  pages={1341-1390}
+}
+
+@misc{h20,
+title = "{H2O.ai}. https://www.h2o.ai/",
+}
+
+@misc{keras,
+title = "{Keras}. https://keras.io/",
+}
+
+@misc{lgbm,
+title = "{LightGBM}. https://lightgbm.readthedocs.io",
+}
+
+@misc{ts,
+title = "{TensorFlow}. https://www.tensorflow.org/",
+}
+
+@misc{vowpalwabbit,
+title = "{Vowpal Wabbit}. https://vowpalwabbit.org/",
+}
+
+@misc{DR-API,
+title = "DataRobot Python Package. https://datarobot-public-api-client.readthedocs-hosted.com/en/v2.26.0/"
+}
+
+@misc{sxs,
+title = "{SXS Gravitational Waveform Database}. https://data.black-holes.org/waveforms/catalog.html",
+}
+
+@article{Chen2016XGBoostAS,
+  title={XGBoost: A Scalable Tree Boosting System},
+  author={Tianqi Chen and Carlos Guestrin},
+  journal={Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  year={2016}
+}
+
+@article{Schmidt_2021,
+   title={Machine learning gravitational waves from binary black hole mergers},
+   volume={103},
+   ISSN={2470-0029},
+   url={http://dx.doi.org/10.1103/PhysRevD.103.043020},
+   DOI={10.1103/physrevd.103.043020},
+   number={4},
+   journal={Physical Review D},
+   publisher={American Physical Society (APS)},
+   author={Schmidt, Stefano and Breschi, Matteo and Gamba, Rossella and Pagano, Giulia and Rettegno, Piero and Riemenschneider, Gunnar and Bernuzzi, Sebastiano and Nagar, Alessandro and Del Pozzo, Walter},
+   year={2021},
+   month={Feb}
+}
+
+@article{Huerta_2021,
+   title={Accelerated, scalable and reproducible AI-driven gravitational wave detection},
+   ISSN={2397-3366},
+   url={http://dx.doi.org/10.1038/s41550-021-01405-0},
+   DOI={10.1038/s41550-021-01405-0},
+   journal={Nature Astronomy},
+   publisher={Springer Science and Business Media LLC},
+   author={Huerta, E. A. and Khan, Asad and Huang, Xiaobo and Tian, Minyang and Levental, Maksim and Chard, Ryan and Wei, Wei and Heflin, Maeve and Katz, Daniel S. and Kindratenko, Volodymyr and et al.},
+   year={2021},
+   month={Jul}
+}
+
+@article{Cuoco_2020,
+	doi = {10.1088/2632-2153/abb93a},
+	url = {https://doi.org/10.1088/2632-2153/abb93a},
+	year = 2020,
+	month = {dec},
+	publisher = {{IOP} Publishing},
+	volume = {2},
+	number = {1},
+	pages = {011002},
+	author = {Elena Cuoco and Jade Powell and Marco Cavagli{\`{a}} and Kendall Ackley and Micha{\l} Bejger and Chayan Chatterjee and Michael Coughlin and Scott Coughlin and Paul Easter and Reed Essick and Hunter Gabbard and Timothy Gebhard and Shaon Ghosh and Leïla Haegel and Alberto Iess and David Keitel and Zsuzsa M{\'{a}}rka and Szabolcs M{\'{a}}rka and Filip Morawski and Tri Nguyen and Rich Ormiston and Michael Pürrer and Massimiliano Razzano and Kai Staats and Gabriele Vajente and Daniel Williams},
+	title = {Enhancing gravitational-wave science with machine learning},
+	journal = {Machine Learning: Science and Technology}
+}
+
+@misc{setyawati2019regression,
+      title={Regression methods in waveform modeling: a comparative study}, 
+      author={Yoshinta Setyawati and Michael Pürrer and Frank Ohme},
+      year={2019},
+      eprint={1909.10986},
+      archivePrefix={arXiv},
+      primaryClass={astro-ph.IM}
+}
+
+@article{Cohen2013OnTS,
+  title={On the Stability and Accuracy of Least Squares Approximations},
+  author={Albert Cohen and Mark A. Davenport and Dany Leviatan},
+  journal={Foundations of Computational Mathematics},
+  year={2013},
+  volume={13},
+  pages={819-834}
+}
+
+
+@article{Boser1996,
+author = {Boser, Bernhard and Guyon, Isabelle and Vapnik, Vladimir},
+year = {1996},
+month = {08},
+pages = {},
+title = {A Training Algorithm for Optimal Margin Classifier},
+volume = {5},
+journal = {Proceedings of the Fifth Annual ACM Workshop on Computational Learning Theory},
+doi = {10.1145/130385.130401}
+}
+
+@article{cortes1995support,
+  author = {Cortes, C. and Vapnik, V.},
+  journal = {Machine Learning},
+  keywords = {classification margin soft support svm vector},
+  pages = {273-297},
+  title = {Support Vector Networks},
+  volume = 20,
+  year = 1995
+}
+
+@book{automl_book,
+    editor = {Hutter, Frank and Kotthoff, Lars and Vanschoren, Joaquin},
+    note = {In press, available at http://automl.org/book.},
+    publisher = {Springer},
+    title = {Automated Machine Learning: Methods, Systems, Challenges},
+    year = {2018}
+}
+
+
+@book{Bellman:DynamicProgramming,
+  author = {Bellman, Richard},
+  isbn = {9780486428093},
+  keywords = {book dynamic programming},
+  publisher = {Dover Publications},
+  title = {{Dynamic Programming}},
+  year = 1957
+}
+
+@ARTICLE{2017arXiv170306987A,
+       author = {{Adcock}, Ben and {Brugiapaglia}, Simone and {Webster}, Clayton G.},
+        title = "{Compressed sensing approaches for polynomial approximation of high-dimensional functions}",
+      journal = {arXiv e-prints},
+     keywords = {Mathematics - Numerical Analysis},
+         year = 2017,
+        month = mar,
+          eid = {arXiv:1703.06987},
+        pages = {arXiv:1703.06987},
+archivePrefix = {arXiv},
+       eprint = {1703.06987},
+ primaryClass = {math.NA},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2017arXiv170306987A},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{CHKIFA2015400,
+title = {Breaking the curse of dimensionality in sparse polynomial approximation of parametric PDEs},
+journal = {Journal de Mathématiques Pures et Appliquées},
+volume = {103},
+number = {2},
+pages = {400-428},
+year = {2015},
+issn = {0021-7824},
+doi = {https://doi.org/10.1016/j.matpur.2014.04.009},
+author = {Abdellah Chkifa and Albert Cohen and Christoph Schwab},
+keywords = {Parametric PDEs, Curse of dimensionality, Sparse Legendre series, Sparse high dimensional interpolation},
+}
+
+@book{karniadakis2005spectral,
+  title={Spectral/hp Element Methods for Computational Fluid Dynamics},
+  author={Karniadakis, G. and Sherwin, S.J.},
+  isbn={9780191713491},
+  series={Numerical mathematics and scientific computation},
+  url={https://books.google.com.ar/books?id=tI3ujwEACAAJ},
+  year={2005},
+  publisher={Oxford University Press}
+}
+
+@article{Pretorius_2007,
+	doi = {10.1088/0264-9381/24/12/s07},
+	url = {https://doi.org/10.1088%2F0264-9381%2F24%2F12%2Fs07},
+	year = 2007,
+	month = {may},
+	publisher = {{IOP} Publishing},
+	volume = {24},
+	number = {12},
+	pages = {S83--S108},
+	author = {Frans Pretorius and Deepak Khurana},
+	title = {Black hole mergers and unstable circular orbits},  
+	journal = {Classical and Quantum Gravity}
+}
+
+@book{Shibata_NR,
+   title = {Numerical Relativity},
+   author = {Masaru Shibata},
+   publisher = {World Scientific Publishing Company},
+   url = {https://doi.org/10.1142/9692},
+   isbn = {9814699713; 9789814699716},
+   year = {2015},
+   series = {100 Years of General Relativity},
+}
+
+@article{Abbott_2016,
+  title = {Observation of gravitational waves from a binary black hole merger},
+  issn = {0031-9007},
+  number = {6},
+  volume = {116},
+  collaboration = {LIGO Scientific Collaboration and Virgo Collaboration},
+  journal = {Phys. Rev. Lett.},
+  volume = {116},
+  issue = {6},
+  pages = {061102},
+  numpages = {16},
+  year = {2016},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.116.061102},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.116.061102}
+}
+
+@article{Lehner_2014,
+doi = {10.1146/annurev-astro-081913-040031},
+url = {https://doi.org/10.1146%2Fannurev-astro-081913-040031},
+year = 2014,
+month = {aug},
+publisher = {Annual Reviews},
+volume = {52},
+number = {1},
+pages = {661--694},
+author = {Luis Lehner and Frans Pretorius},
+title = {Numerical Relativity and Astrophysics},  
+journal = {Annual Review of Astronomy and Astrophysics}
+}
+
+@article{Christensen_2022,
+	url = {https://doi.org/10.1103%2Frevmodphys.94.025001},
+	year = {2022},
+	month = {apr},
+	volume = {94},
+	number = {2},
+	author = {Nelson Christensen and Renate Meyer},
+	title = {Parameter estimation with gravitational waves},
+	journal = {Reviews of Modern Physics}
+}
+%doi = {10.1103/revmodphys.94.025001},
+%publisher = {American Physical Society ({APS})},
+
+@article{Veitch_2015,
+	url = {https://doi.org/10.1103%2Fphysrevd.91.042003},
+	year = 2015,
+	month = {feb},
+	volume = {91},
+	number = {4},
+	author = {J. Veitch and V. Raymond and B. Farr and W. Farr and P. Graff and S. Vitale and B. Aylott and K. Blackburn and N. Christensen and M. Coughlin and W. Del Pozzo and F. Feroz and J. Gair and C.-J. Haster and V. Kalogera and T. Littenberg and I. Mandel and R. O'Shaughnessy and M. Pitkin and C. Rodriguez and C. Röver and T. Sidery and R. Smith and M. Van Der Sluys and A. Vecchio and W. Vousden and L. Wade},
+	title = {Parameter estimation for compact binaries with ground-based gravitational-wave observations using the {LALInference} software library},  
+	journal = {Physical Review D}
+}
+%publisher = {American Physical Society ({APS})},
+%doi = {10.1103/physrevd.91.042003},
+
+@article{Cannon_2012,
+doi = {10.1088/0004-637X/748/2/136},
+url = {https://dx.doi.org/10.1088/0004-637X/748/2/136},
+year = {2012},
+month = {mar},
+publisher = {The American Astronomical Society},
+volume = {748},
+number = {2},
+pages = {136},
+author = {Kipp Cannon and Romain Cariou and Adrian Chapman and Mireia Crispin-Ortuzar and Nickolas Fotopoulos and Melissa Frei and Chad Hanna and Erin Kara and Drew Keppel and Laura Liao and Stephen Privitera and Antony Searle and Leo Singer and Alan Weinstein},
+title = {TOWARD EARLY-WARNING DETECTION OF GRAVITATIONAL WAVES FROM COMPACT BINARY COALESCENCE},
+journal = {The Astrophysical Journal},
+abstract = {Rapid detection of compact binary coalescence (CBC) with a network of advanced gravitational-wave detectors will offer a unique opportunity for multi-messenger astronomy. Prompt detection alerts for the astronomical community might make it possible to observe the onset of electromagnetic emission from CBC. We demonstrate a computationally practical filtering strategy that could produce early-warning triggers before gravitational radiation from the final merger has arrived at the detectors.}
+}
+
+@article{Babak_2013,	
+	url = {https://doi.org/10.1103%2Fphysrevd.87.024033},
+	year = 2013,
+	month = {jan},
+	volume = {87},
+	number = {2},
+	author = {S. Babak and R. Biswas and P. R. Brady and D. A. Brown and K. Cannon and C. D. Capano and J. H. Clayton and T. Cokelaer and J. D. E. Creighton and T. Dent and A. Dietz and S. Fairhurst and N. Fotopoulos and G. Gonz{\'{a}
+}lez and C. Hanna and I. W. Harry and G. Jones and D. Keppel and D. J. A. McKechan and L. Pekowsky and S. Privitera and C. Robinson and A. C. Rodriguez and B. S. Sathyaprakash and A. S. Sengupta and M. Vallisneri and R. Vaulin and A. J. Weinstein},
+	title = {Searching for gravitational waves from binary coalescence},
+	journal = {Physical Review D}
+}
+%doi = {10.1103/physrevd.87.024033},
+%publisher = {American Physical Society ({APS})},
+
+@book{James2013,
+  author = {James, Gareth and Witten, Daniela and Hastie, Trevor and Tibshirani, Robert},
+  isbn={9781461471370},
+  publisher = {Springer},
+  title = {An Introduction to Statistical Learning: with Applications in R },
+  url = {https://www.statlearning.com/},
+  year = 2013
+}
+
+@misc{cerino2022automated,
+      title={An automated parameter domain decomposition approach for gravitational wave surrogates using hp-greedy refinement}, 
+      author={Franco Cerino and J. Andrés Diaz-Pace and Manuel Tiglio},
+      year={2022},
+      eprint={2212.08554},
+      archivePrefix={arXiv},
+      primaryClass={gr-qc}
+}
+
+

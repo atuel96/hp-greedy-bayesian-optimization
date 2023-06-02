@@ -1,6 +1,6 @@
 # Generate Gravitational Waves
 
-The wave functions are generated with the surrogate model NRHybSur3dq8 [[1]](#1) using the `gwsurrogate` python library.
+The wave functions are generated with the surrogate model NRHybSur3dq8 [[1]](#1) using the `gwsurrogate` python library. For simplicity, in this work we only use the $(l, m) = (2, 2)$ dominant angular mode.
 
 ## How to generate gravitational waves
 

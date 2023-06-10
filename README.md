@@ -12,7 +12,7 @@ In order to construct a reduced basis we need:
 
 For the optimization task we add a **validation set** and the **wave parameters of the validation set**.
 
-So, we start by loading the files provided in the [data](data/) folder:
+We start by loading the files provided in the [data](data/) folder:
 
 ``` python
 import numpy as np
@@ -51,7 +51,7 @@ objective = Objective(times=times,
                       hyperparameters=hyperparameters)
 ```
 
-
+Finally we can start the optimization creating an study. See the [optuna](https://optuna.org/) page for more details.
 
 ``` python
 from optuna.study import create_study

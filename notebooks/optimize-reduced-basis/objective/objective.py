@@ -67,9 +67,6 @@ class Objective:
                 else:
                     trial_hyperparams[key] = trial.suggest_int(key, value[0], value[1])
                 continue
-            assert (
-                type(value) == int or type(value) == float
-            ), f"value of '{key}' must be int or float"
             trial_hyperparams[key] = value
 
         # global seed index

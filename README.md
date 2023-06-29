@@ -1,6 +1,9 @@
 # Hp Greedy Bayesian Optimization
 
-Bayesian Optimization applied to the construction of a reduced basis with hp-greedy refinement [[1]](#1)[[2]](#2).
+The Reducid Basis framework is an approach for building gravitational waves surrogates. The hp-greedy refinement [[1]](#1)[[2]](#2) is an extention of this approach. This refinement can lead to faster models without any loss of precision, but it adds the complexity of hyperparameter selection.
+
+Here we apply bayesian optimization methods [[3]](#3)[[4]](#4) to automate the hyperparameter selection process, aiming to construct an optimal reduced basis.
+
 
 ## Let's begin with a simple optimization task
 
@@ -11,6 +14,8 @@ In order to construct a reduced basis we need:
 * **Wave Parameters of the Training Set**: an array with the parameters corresponding to each gravitational wave in the training set. *Note that there must be an equal number of parameters and gravitational waves.*
 
 For the optimization task we add a **validation set** and the **wave parameters of the validation set**.
+
+The key libraries used are [scikit-reducedmodel](https://github.com/francocerino/scikit-reducedmodel) and [optuna](https://optuna.org/).
 
 We start by loading the files provided in the [data](data/) folder:
 
@@ -79,3 +84,9 @@ Eftang, Jens L., Anthony T. Patera, and Einar M. Ronquist. “An ‘Hp’ Certif
 
 <a id=2>[2]</a>
 Cerino, Franco, J. Andrés Diaz-Pace, and Manuel Tiglio. “An Automated Parameter Domain Decomposition Approach for Gravitational Wave Surrogates Using Hp-Greedy Refinement.” arXiv, December 16, 2022. https://doi.org/10.48550/arXiv.2212.08554.
+
+<a id=3>[3]</a>
+Shahriari, B., Swersky, K., Wang, Z., Adams, R. P., de Freitas, N. Taking the human out of the loop: A review of bayesian optimization. Proceedings of the IEEE, 104 (1), 148–175, 2016. https://ieeexplore.ieee.org/document/7352306
+
+<a id=4>[4]</a>
+Brochu, E., Cora, V. M., de Freitas, N. A tutorial on bayesian optimization of expensive cost functions, with application to active user modeling and hierarchical reinforcement learning, 2010. https://arxiv.org/abs/2212.08554

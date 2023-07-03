@@ -4,6 +4,19 @@ The Reducid Basis framework is an approach for building gravitational waves surr
 
 Here we apply bayesian optimization methods [[3]](#3)[[4]](#4) to automate the hyperparameter selection process, aiming to construct an optimal reduced basis.
 
+# Gravitational Waves
+
+In our datasets, each gravitational wave is represented as a complex time series, with the real part representing the plus polarization and the imaginary part representing the cross polarization."
+
+These waves are parametrized, and we worked with 3 different cases:
+
+* **1D Case**: No spin, the only free parameter is $q = m1/m2$
+* **2D Case**: Two aligned spins with the same magnitude are added to the 1D case, meaning that $χ_{1z} = χ_{2z}$
+* **3D Case**: The two spins are allowed to vary, but independently: in general, $χ_{1z} \not = χ_{2z}$.
+
+Go to [this folder](generate-gravitational-waves) to see how we generated the datasets we used as our ground truth.
+
+
 # Tutorial
 
 ## Let's begin with a simple optimization task

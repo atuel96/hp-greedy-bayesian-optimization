@@ -75,6 +75,10 @@ study = create_study(study_name=study_name,
 study.optimize(objective, n_trials=50, gc_after_trial=True)
 ```
 
+You can see the evolution of the best validation error found in the following figure:
+
+![errorEvolution](figures/simple-optimization/val-error-evolution.png)
+
 Go to the [notebooks/optimize-reduced-basis](notebooks/optimize-reduced-basis) folder and open the [01-simple-optimization.ipynb](notebooks/optimize-reduced-basis/01-simple-optimization.ipynb) notebook to run this optimization.
 
 # References

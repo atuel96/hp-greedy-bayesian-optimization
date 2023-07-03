@@ -17,7 +17,7 @@ For the optimization task we add a **validation set** and the **wave parameters 
 
 The key libraries used are [scikit-reducedmodel](https://github.com/francocerino/scikit-reducedmodel) and [optuna](https://optuna.org/).
 
-We start by loading the files provided in the [data](data/) folder:
+We start by loading the files provided in the [data](data/) folder (in order to generate your own data, go [here](generate-gravitational-waves)):
 
 ``` python
 import numpy as np

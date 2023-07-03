@@ -4,6 +4,7 @@ The Reducid Basis framework is an approach for building gravitational waves surr
 
 Here we apply bayesian optimization methods [[3]](#3)[[4]](#4) to automate the hyperparameter selection process, aiming to construct an optimal reduced basis.
 
+# Tutorial
 
 ## Let's begin with a simple optimization task
 
@@ -78,6 +79,22 @@ study.optimize(objective, n_trials=50, gc_after_trial=True)
 You can see the evolution of the best validation error found in the following figure:
 
 ![errorEvolution](figures/simple-optimization/val-error-evolution.png)
+
+
+After the optimization, you can see the best hyperparameters found:
+``` python
+best_params = study.best_params; 
+for param, value in best_params.items():
+    print(f"Best {param} = {value}") 
+print(f"Best Validation Error {study.best_value:.3e}")
+```
+output:
+``` 
+Best lmax = 4
+Best nmax = 15
+Best q_index = 295
+Best Validation Error 2.754e-13
+```
 
 Go to the [notebooks/optimize-reduced-basis](notebooks/optimize-reduced-basis) folder and open the [01-simple-optimization.ipynb](notebooks/optimize-reduced-basis/01-simple-optimization.ipynb) notebook to run this optimization.
 

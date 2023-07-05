@@ -217,6 +217,8 @@ Best nmax = 25
 Best Validation Error 1.990e-05
 ```
 
+You can open [this notebook](notebooks\optimize-reduced-basis\03-2d-optimization.ipynb) to run this example.
+
 ### Order of Seed Indices
 
 As mentioned before, the order of `q_index` and `chi_index` should be respected. 

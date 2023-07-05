@@ -17,9 +17,8 @@ These waves are parametrized, and we worked with 3 different cases:
 Go to [this folder](generate-gravitational-waves) to see how we generated the datasets we used as our ground truth.
 
 
-# Tutorial
+# Quick Optimization Tutorial
 
-## Let's begin with a simple optimization task
 
 In order to construct a reduced basis we need:
 
@@ -91,7 +90,7 @@ study.optimize(objective, n_trials=50, gc_after_trial=True)
 
 You can see the evolution of the best validation error found in the following figure:
 
-![errorEvolution](figures/simple-optimization/val-error-evolution.png)
+![errorEvolution](figures/1d-simple-val-error-vs-trials.png)
 
 
 After the optimization, you can see the best hyperparameters found:
@@ -110,6 +109,127 @@ Best Validation Error 2.754e-13
 ```
 
 Go to the [notebooks/optimize-reduced-basis](notebooks/optimize-reduced-basis) folder and open the [01-simple-optimization.ipynb](notebooks/optimize-reduced-basis/01-simple-optimization.ipynb) notebook to run this optimization.
+
+# 2D and 3D Cases
+
+In 2D and 3D cases you'll first have to generate your own data ([see how](generate-gravitational-waves)).
+
+
+For example, for a 2D case you can generate a training set with 3000 waves using our script with the folling command:
+
+
+``` bash
+python generate-gravitational-waves.py -d 2 -1 100 -x 30
+```
+
+then a validation set:
+``` bash
+python generate-gravitational-waves.py -d 2 -1 50 -x 15
+```
+
+and a smaller test set:
+``` bash
+python generate-gravitational-waves.py -d 2 -1 30 -x 12
+```
+
+
+then you load your data:
+
+``` python
+import numpy as np
+
+# physical points
+times = np.linspace(-2750, 100, 28501)
+
+# training set
+filepath_train = "<your-folder-name-here>/2d-complex-q100xchi30-total3000.npy"   
+train = np.load(filepath_train)  
+qs_train = np.linspace(1, 8, 100)
+chis_train = np.linspace(-0.8, 0.8, 30)
+parameters_train = np.array([(q, chi) for q in qs_train for chi in chis_train])
+
+# validation set
+filepath_valid = "<your-folder-name-here>/2d-complex-q50xchi15-total750.npy"
+valid = np.load(filepath_valid) 
+qs_valid = np.linspace(1, 8, 50)
+chis_valid = np.linspace(-0.8, 0.8, 15)
+parameters_valid = np.array([(q, chi) for q in qs_valid for chi in chis_valid])
+
+# test set
+filepath_test = "<your-folder-name-here>/2d-complex-q30xchi12-total360.npy"
+test = np.load(filepath_test)
+qs_test = np.linspace(1, 8, 30)
+chis_test = np.linspace(-0.8, 0.8, 12)
+parameters_test = np.array([(q, chi) for q in qs_test for chi in chis_test])
+```
+
+**Note** that here the parameters have two dimensions, and that $q$ goes before $\chi_z$. This order is important.
+
+In the hyperparameters dictionary, you must put the `q_index` before the `chi_index`.
+
+``` python
+import optuna
+from optuna.samplers import TPESampler
+from objective import Objective
+
+hyperparameters = {"nmax" : [10, 25],
+                   "lmax" : [0, 10],
+                   "q_index" : [0, qs_train.shape[0] - 1],
+                   "chi_index" : [0, chis_train.shape[0] - 1]}
+
+objective = Objective(times=times, 
+                      train=train, 
+                      valid=valid, 
+                      parameters_train=parameters_train, 
+                      parameters_valid=parameters_valid, 
+                      hyperparameters= hyperparameters)
+
+study_name = f"2DTPE-ts{train.shape[0]}-vs{valid.shape[0]}"
+
+study = optuna.create_study(study_name=study_name,
+                                storage="sqlite:///2d-studies.db", 
+                                load_if_exists=True, 
+                                sampler=TPESampler(multivariate=True))
+
+study.optimize(objective, n_trials=50, gc_after_trial=True)
+```
+
+This optimization can take several hours to complete if the number of trials is too large, so it is advisable to stick to 50 or less trials.
+
+Here you can see the evolution of the best error found for 100 trials
+
+![2d-error](figures/2d-validation-error-vs-trials.png)
+
+And the best hyperamenters found
+
+```python
+best_params = study.best_params; 
+for param, value in best_params.items():
+    print(f"Best {param} = {value}") 
+print(f"Best Validation Error {study.best_value:.3e}")
+```
+output:
+```
+Best q_index = 99
+Best chi_index = 18
+Best lmax = 4
+Best nmax = 25
+Best Validation Error 1.990e-05
+```
+
+### Order of Seed Indices
+
+As mentioned before, the order of `q_index` and `chi_index` should be respected. 
+In the 2D case `q_index` goes before `chi_index`. 
+
+In the 3D case you would have `q_index`, `chi1_index` and `chi2_index`, in that order:
+``` python
+hyperparameters = {"nmax" : [10, 25],
+                   "lmax" : [0, 10],
+                   "q_index" : [0, qs_train.shape[0] - 1],
+                   "chi1_index" : [0, chis_train.shape[0] - 1],
+                   "chi2_index" : [0, chis_train.shape[0] - 1]}
+```
 
 # References
 

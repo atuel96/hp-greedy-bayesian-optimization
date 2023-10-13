@@ -16,9 +16,17 @@ These waves are parametrized, and we worked with 3 different cases:
 
 Go to [this folder](generate-gravitational-waves) to see how we generated the datasets we used as our ground truth.
 
+# Prerequisites
+
+The key libraries used are [scikit-reducedmodel](https://github.com/francocerino/scikit-reducedmodel) and [optuna](https://optuna.org/) version 3.1.1. You can install them via pip:
+
+```
+pip install Scikit-ReducedModel
+pip install optuna==3.1.1
+```
+
 
 # Quick Optimization Tutorial
-
 
 In order to construct a reduced basis we need:
 
@@ -28,7 +36,7 @@ In order to construct a reduced basis we need:
 
 For the optimization task we add a **validation set** and the **wave parameters of the validation set**.
 
-The key libraries used are [scikit-reducedmodel](https://github.com/francocerino/scikit-reducedmodel) and [optuna](https://optuna.org/).
+
 
 We start by loading the files provided in the [data](data/) folder (in order to generate your own data, go [here](generate-gravitational-waves)):
 

@@ -234,7 +234,7 @@ Best nmax = 25
 Best Validation Error 1.990e-05
 ```
 
-You can open [this notebook](notebooks\optimize-reduced-basis\03-2d-optimization.ipynb) to run this example.
+You can open [this notebook](notebooks/optimize-reduced-basis/02-2d-optimization.ipynb) to run this example.
 
 ### Order of Seed Indices
 
@@ -253,7 +253,7 @@ hyperparameters = {"nmax" : [10, 25],
 # TPE Toy Model
 
 
-If you want to understand better the TPE algorithm [this notebook](notebooks\understand-tpe\00-Understanding-TPE.ipynb) may help.
+If you want to understand better the TPE algorithm [this notebook](notebooks/understand-tpe/00-Understanding-TPE.ipynb) may help.
 
 # References
 

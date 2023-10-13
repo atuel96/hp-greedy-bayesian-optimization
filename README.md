@@ -2,7 +2,7 @@
 
 The Reducid Basis framework is an approach for building gravitational waves surrogates. The hp-greedy refinement [[1]](#1)[[2]](#2) is an extention of this approach. This refinement can lead to faster models without any loss of precision, but it adds the complexity of hyperparameter selection.
 
-Here we apply bayesian optimization methods [[3]](#3)[[4]](#4) to automate the hyperparameter selection process, aiming to construct an optimal reduced basis.
+Here we apply bayesian optimization methods [[3]](#3)[[4]](#4) to automate the hyperparameter selection process, aiming to construct an optimal reduced basis. More concretely, we used the Three-Structured Parzen Estimator (TPE) algorithm [[5](#5)] implemented in [Optuna](https://optuna.org/) .
 
 # Gravitational Waves
 
@@ -250,6 +250,11 @@ hyperparameters = {"nmax" : [10, 25],
                    "chi2_index" : [0, chis_train.shape[0] - 1]}
 ```
 
+# TPE Toy Model
+
+
+If you want to understand better the TPE algorithm [this notebook](notebooks\understand-tpe\00-Understanding-TPE.ipynb) may help.
+
 # References
 
 <a id=1>[1]</a>
@@ -263,3 +268,5 @@ Shahriari, B., Swersky, K., Wang, Z., Adams, R. P., de Freitas, N. Taking the hu
 
 <a id=4>[4]</a>
 Brochu, E., Cora, V. M., de Freitas, N. A tutorial on bayesian optimization of expensive cost functions, with application to active user modeling and hierarchical reinforcement learning, 2010. https://arxiv.org/abs/2212.08554
+
+<a id=5>[5]</a> Bergstra, James, Rémi Bardenet, Yoshua Bengio, and Balázs Kégl. “Algorithms for Hyper-Parameter Optimization.” In Advances in Neural Information Processing Systems, Vol. 24. Curran Associates, Inc., 2011. https://papers.nips.cc/paper_files/paper/2011/hash/86e8f7ab32cfd12577bc2619bc635690-Abstract.html.

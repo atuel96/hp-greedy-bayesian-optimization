@@ -5,16 +5,6 @@ from skreducedmodel.reducedbasis import ReducedBasis, error
 class Objective:
     """Callable objective class to perform an optimization within an optuna study"""
 
-    VALID_HYPERPARAMS = [
-        "q_index",
-        "chi_index",
-        "chi1_index",
-        "chi2_index",
-        "greedy_tol",
-        "nmax",
-        "lmax",
-    ]
-
     def __init__(
         self,
         times: np.ndarray,
@@ -47,10 +37,6 @@ class Objective:
         trial_hyperparams = {}
         seed_trial_hyperparams = {}
         for key, value in self.hyperparameters.items():
-            assert (
-                key in self.VALID_HYPERPARAMS
-            ), f"'{key}' is not a valid hyperparameter name. Try one of the following:\n{self.VALID_HYPERPARAMS}"
-
             if type(value) == list or type(value) == tuple:
                 assert (
                     len(value) == 2

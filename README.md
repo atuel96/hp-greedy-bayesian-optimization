@@ -25,7 +25,6 @@ pip install Scikit-ReducedModel
 pip install optuna==3.1.1
 ```
 
-
 # Quick Optimization Tutorial
 
 In order to construct a reduced basis we need:
@@ -35,7 +34,6 @@ In order to construct a reduced basis we need:
 * **Wave Parameters of the Training Set**: an array with the parameters corresponding to each gravitational wave in the training set. *Note that there must be an equal number of parameters and gravitational waves.*
 
 For the optimization task we add a **validation set** and the **wave parameters of the validation set**.
-
 
 
 We start by loading the files provided in the [data](data/) folder (in order to generate your own data, go [here](generate-gravitational-waves)):

@@ -75,6 +75,17 @@ objective = Objective(times=times,
                       hyperparameters=hyperparameters)
 ```
 
+If we would like to fix `nmax` or `lmax` to a specific value, e.g if we want `nmax = 10`, we would just pass that value:
+
+``` python
+hyperparameters = {"nmax" : 10,
+                   "lmax" : [0, 5],
+                   "q_index" : [0, train.shape[0]-1]}
+```          
+
+We can also pass through this dictionary other valid parameters for building the reduced basis as `normalize` or `greedy_tol`, see [valid parameters here.](https://scikit-reducedmodel.readthedocs.io/en/latest/skreducedmodel.html#skreducedmodel.reducedbasis.ReducedBasis)
+
+
 Finally we can start the optimization creating an study. See the [optuna](https://optuna.org/) page for more details.
 
 ``` python
